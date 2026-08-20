@@ -1,8 +1,8 @@
 # Research directions — scan 2026-08-19-21-50
 
-Six directions argued from 235 open-access papers (IEEE Open Journal of the Computer Society, ISSN 2644-1268, published since 2025-01-01), citing 29 of them.
+Six directions argued from **172 eligible** papers, citing 32 of them.
 
-Security is deliberately out of scope for this brief.
+A standing filter (`tools/topic_filter.py`) removed **63 of 235** papers before analysis: security (45), privacy (16), fraud (9), governance (4).
 
 ---
 
@@ -32,29 +32,29 @@ Security is deliberately out of scope for this brief.
 
 ---
 
-## 02. Data quality research cleans the rows. The catalog is what rots.
+## 02. Metric indexing and vector search are the same problem, published in different rooms
 
-**Data platform engineering** · _Underserved problem_ · Effort: 12&ndash;16 weeks
+**Retrieval systems** · _Two literatures, no overlap_ · Effort: 10&ndash;14 weeks
 
-> Enterprise catalogs are accurate on day one and quietly wrong by month six, and no pipeline stage would ever notice.
+> A decades-old literature with provable recall guarantees sits beside a new one with none, and the venue is publishing both without either citing the other.
 
-**The gap.** Integrating AI and Large Language Models for Automated Data Quality Enhancement in Data Integration Pipelines frames quality as record-level cleaning at pipeline time — nulls, formats, duplicates, conflicts. That is the well-studied half. The unstudied half is metadata decay: catalog entries, lineage edges, ownership records and glossary definitions drifting away from the data they describe, silently. The adjacent machinery is all present in the corpus — Maximizing Unlabeled Data Utility with Improved Representation Learning and Pseudo Labeling for cheap labels, Human-in-the-Loop Feature Selection with an Interpretable Kolmogorov-Arnold Network for routing judgement to a person, Multi-Layer Subspace Knowledge Transfer for Open-Set Recognition for unseen categories — but nobody has aimed it at the catalog.
+**The gap.** Three papers here work classical similarity search with real rigour: Gaussian Kernel-Based LSH for High-Dimensional Similarity Search, Include-Slim: Supporting Similarity Retrieval Variants With a Metric Access Method, and A Framework for Predictive Similarity Queries Over Heterogeneous Metric Spaces. Separately, H2-Cache accelerates generative diffusion through hierarchical caching, and SINdex proposes a semantic inconsistency index for detecting hallucination in LLMs. Nobody joins them. The metric-access-method community has spent decades establishing what an index guarantees about recall; the retrieval-augmented generation community ships approximate indexes with tuned-by-vibes parameters and then measures hallucination downstream as if it were purely a model property. Same mathematical object, two vocabularies, no shared evaluation.
 
-**What to build.** Define and measure catalog entropy: divergence between what a catalog declares about a dataset and what the data shows, tracked over time. Then a steward-in-the-loop repair agent that proposes corrections with calibrated confidence and escalates only uncertain cases. The decisive metric is steward-minutes per corrected entry — governance programmes fail on labour cost, not on model accuracy.
+**What to build.** Establish the missing chain: index recall → retrieval quality → generation faithfulness. Define retrieval-induced hallucination — the share of unfaithful output attributable to the index failing to return a relevant document, rather than to the generator ignoring one it received. That distinction is currently unmeasurable, so every RAG hallucination is blamed on the model. Then bring the metric-access-method guarantees to bear on the operating point: what recall does a deployment actually need, and what does it cost?
 
-**First experiment.** Instrument a catalog over a multi-source estate, inject schema and semantic drift on a controlled schedule, and measure detection latency, false-repair rate and steward load. A negative result — that a confident agent costs more than none, because stewards must verify everything regardless — is publishable and immediately useful.
+**First experiment.** Fix a corpus and a question set. Sweep an approximate index across its accuracy knob — HNSW efSearch, IVF nprobe — to trace measured recall@k from roughly 0.5 to 1.0, and at each point measure generation faithfulness. The interesting outcome is the shape: if faithfulness collapses sharply within a narrow recall band, that band is an operating-point finding every RAG deployment needs and nobody has published.
 
-**Why it is under-attempted.** Metadata decay has no benchmark and no public dataset, because catalogs are internal artefacts and their decay is embarrassing. Constructing ground truth means either instrumenting a live estate for months or building a drift simulator credible enough that reviewers accept it — and neither is a weekend project.
+**Why it is under-attempted.** The two communities publish in different venues, use different names for the same structure, and neither owns the whole pipeline — database researchers do not run generators, and NLP researchers treat the index as a black box they did not build. Faithfulness evaluation is also expensive and contested, so the end-to-end experiment is nobody’s natural next paper.
 
-**Venue read.** Genuinely open niche; data governance is under-published relative to what it costs industry.
+**Venue read.** The venue already publishes both halves, which makes it an unusually receptive home for the bridge.
 
 **Built on:**
 
-- [Integrating AI and Large Language Models for Automated Data Quality Enhancement in Data Integration Systems](https://doi.org/10.1109/ojcs.2026.3666345) — 2026, 2 citations, _Software Engineering & AIOps_
-- [Maximizing Unlabeled Data Utility with Improved Representation Learning and Pseudo Labeling](https://doi.org/10.1109/ojcs.2026.3712699) — 2026, 0 citations, _Learning Theory & Optimization_
-- [Human-in-the-Loop Feature Selection Using Interpretable Kolmogorov-Arnold Network-Based Double Deep Q-Network](https://doi.org/10.1109/ojcs.2026.3652986) — 2026, 0 citations, _Networks, Cloud & Edge_
-- [Multi-Layer Subspace Knowledge Transfer Framework for Open-Set Recognition](https://doi.org/10.1109/ojcs.2026.3683032) — 2026, 0 citations, _Learning Theory & Optimization_
-- [A Novel Ensemble Model for Optimizing Author Profiling](https://doi.org/10.1109/ojcs.2026.3687421) — 2026, 0 citations, _Learning Theory & Optimization_
+- [Gaussian Kernel-Based LSH for High-Dimensional Similarity Search](https://doi.org/10.1109/ojcs.2025.3602355) — 2025, 1 citations, _Learning Theory & Optimization_
+- [Include-Slim: Supporting Similarity Retrieval Variants With a Metric Access Method](https://doi.org/10.1109/ojcs.2026.3687006) — 2026, 0 citations, _Applied ML & Forecasting_
+- [A Framework for Predictive Similarity Queries Over Heterogeneous Metric Spaces](https://doi.org/10.1109/ojcs.2026.3676153) — 2026, 0 citations, _Applied ML & Forecasting_
+- [H2-Cache: A Novel Hierarchical Dual-Stage Cache for High-Performance Acceleration of Generative Diffusion Models](https://doi.org/10.1109/ojcs.2025.3639606) — 2025, 0 citations, _Multimodal & Vision_
+- [SINdex: S emantic IN consistency Index for Hallucination Detection in LLMs](https://doi.org/10.1109/ojcs.2026.3697236) — 2026, 0 citations, _Software Engineering & AIOps_
 
 ---
 
@@ -72,7 +72,7 @@ Security is deliberately out of scope for this brief.
 
 **Why it is under-attempted.** The forecasting and causal-inference communities barely read each other. Forecasting reviewers want accuracy tables; causal reviewers want identification assumptions. A paper that needs both is harder to place than one that needs either, which is why the loop stays unaddressed despite being obvious to practitioners.
 
-**Venue read.** Rebuts the cluster's most-cited paper on methodology rather than accuracy &mdash; a durable contribution.
+**Venue read.** Rebuts the cluster's most-cited paper on methodology rather than accuracy — a durable contribution.
 
 **Built on:**
 
@@ -81,6 +81,7 @@ Security is deliberately out of scope for this brief.
 - [Comprehensive Electricity Demand Forecasting With a Custom Multi-Dimensional Dataset With Model Analysis and Mobile Visualization](https://doi.org/10.1109/ojcs.2026.3693025) — 2026, 0 citations, _Multimodal & Vision_
 - [BOL-LPP: A Bayesian-Optimized LSTM Model for Day-Ahead Load Price Forecasting in the ERCOT Market](https://doi.org/10.1109/ojcs.2025.3580107) — 2025, 6 citations, _Fraud & Financial Analytics_
 - [CryptoMamba-SSM: Linear Complexity State Space Models for Cryptocurrency Volatility Prediction](https://doi.org/10.1109/ojcs.2026.3651226) — 2026, 2 citations, _Fraud & Financial Analytics_
+- [LaplaceSalesNet: A Neural Laplace-Transformer Framework for Continuous-Time Sales Forecasting](https://doi.org/10.1109/ojcs.2025.3617489) — 2025, 1 citations, _Fraud & Financial Analytics_
 - [ECommVis: Supporting E-Commerce Marketplace Advertising Outcomes Through a Visual Analytics System](https://doi.org/10.1109/ojcs.2026.3660917) — 2026, 0 citations, _Multimodal & Vision_
 
 ---
@@ -89,7 +90,7 @@ Security is deliberately out of scope for this brief.
 
 **Reliability engineering** · _Needs human subjects_ · Effort: 14&ndash;20 weeks (consent and ethics add time)
 
-> A perfectly accurate prediction that arrives too late, or too vague to act on, is worth nothing &mdash; and no reported metric can reveal that this happened.
+> A perfectly accurate prediction that arrives too late, or too vague to act on, is worth nothing — and no reported metric can reveal that this happened.
 
 **The gap.** A Multi-Task Neural Framework for Unified Alert Processing and Incident Prediction in Enterprise IT and Cross-Modal Attention Networks for Multi-Modal Anomaly Detection in System Software both predict operational failure from logs and metrics, and both report classification metrics. DRL-Adapt optimises routing convergence on network measures. Only A Physics-Guided Bayesian Neural Network for Sensor Fault Detection in Wind Turbines carries uncertainty at all, and never connects it to an operator decision. Meanwhile Benchmarking Explainable AI Methods for Vision Transformers and Human-in-the-Loop Feature Selection with a Kolmogorov-Arnold Network evaluate interpretability by fidelity proxies rather than by whether a human acted differently. One shared blind spot: no measured decision, no measured clock.
 
@@ -99,7 +100,7 @@ Security is deliberately out of scope for this brief.
 
 **Why it is under-attempted.** It needs three things that rarely co-occur: real incident timelines, consenting on-call engineers, and ethics approval. Classification metrics need none of those, which is precisely why the literature reports them.
 
-**Venue read.** Benchmarks accrue citations from everything they judge &mdash; high ceiling.
+**Venue read.** Benchmarks accrue citations from everything they judge — high ceiling.
 
 **Built on:**
 
@@ -153,7 +154,7 @@ Security is deliberately out of scope for this brief.
 
 **Why it is under-attempted.** Degradation has no standard corruption suite for multimodal input, unlike the well-established image-corruption benchmarks. Every author would have to build their own, so nobody does, and papers default to the clean-input protocol they inherited.
 
-**Venue read.** Retrofits onto a dozen papers in this corpus &mdash; wide citation surface.
+**Venue read.** Retrofits onto a dozen papers in this corpus — wide citation surface.
 
 **Built on:**
 

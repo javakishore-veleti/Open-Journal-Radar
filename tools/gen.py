@@ -1,8 +1,10 @@
 import json, html, datetime, sqlite3, collections
 from ideas import IDEAS
 from refs import IDEA_REFS
+from topic_filter import partition, EXCLUSIONS
 
-rows = json.load(open('../ojcs_all.json'))
+all_rows = json.load(open('../ojcs_all.json'))
+rows, filtered = partition(all_rows)   # standing exclusions applied on every build
 NOW = datetime.datetime.now(); STAMP = NOW.strftime('%d %B %Y')
 by_title = {r['title']: r for r in rows}
 def find(frag): return next(r for r in rows if frag.lower() in r['title'].lower())
@@ -20,9 +22,10 @@ def byline(p):
     return esc(a[0]) + ' <i>et al.</i>'
 
 clusters = collections.Counter(r['cluster'] for r in rows)
+filt_str = ', '.join(f"<b>{k}</b> ({v})" for k,v in collections.Counter(n for p in filtered for n in p['excluded_by']).most_common())
 maxn = max(clusters.values())
 cited = {r['title'] for v in IDEA_REFS.values() for r in [find(f) for f in v]}
-nonsec = sum(1 for r in rows if r['cluster'] not in ('Security & Threat Detection','Privacy & Federated Learning'))
+filt_counts = collections.Counter(n for p in filtered for n in p['excluded_by'])
 
 # ---------- idea cards ----------
 cards = []
@@ -64,11 +67,12 @@ for name, n in clusters.most_common():
 
 # ---------- full index ----------
 idx = []
-for p in sorted(rows, key=lambda r: (-r['cites'], r['title'])):
+for p in sorted(all_rows, key=lambda r: (-r['cites'], r['title'])):
     star = ' <span class="star" title="Cited by a research direction above">&#9679;</span>' if p['title'] in cited else ''
-    idx.append(f'''<li class="ix" data-cluster="{esc(p['cluster'])}" data-cited="{'1' if p['title'] in cited else '0'}" data-text="{esc((p['title']+' '+' '.join(p['authors'])+' '+p['cluster']).lower())}">
+    ex = p.get('excluded_by') or []
+    idx.append(f'''<li class="ix{' ix-out' if ex else ''}" data-cluster="{esc(p['cluster'])}" data-cited="{'1' if p['title'] in cited else '0'}" data-filtered="{'1' if ex else '0'}" data-text="{esc((p['title']+' '+' '.join(p['authors'])+' '+p['cluster']).lower())}">
  <a href="https://doi.org/{esc(p['doi'])}" target="_blank" rel="noopener" class="ix-t">{esc(p['title'])}</a>{star}
- <span class="ix-m">{byline(p)} <span class="dot">&middot;</span> {p['year']} <span class="dot">&middot;</span> {esc(p['cluster'])} <span class="dot">&middot;</span> <span class="ix-c">{p['cites']} cit.</span></span></li>''')
+ <span class="ix-m">{byline(p)} <span class="dot">&middot;</span> {p['year']} <span class="dot">&middot;</span> {esc(p['cluster'])} <span class="dot">&middot;</span> <span class="ix-c">{p['cites']} cit.</span>{f' <span class="flt">filtered: {esc(", ".join(ex))}</span>' if ex else ''}</span></li>''')
 
 chipbar = ' '.join(f'<button class="chip" data-cluster="{esc(c)}">{esc(c)} <span class="chip-n">{n}</span></button>' for c, n in clusters.most_common())
 
@@ -188,6 +192,9 @@ section.band{{padding-top:clamp(2.6rem,6vw,4.4rem)}}
 .ix-m{{display:block;font-family:var(--sans);font-size:.74rem;color:var(--ink-3);margin-top:.2rem}}
 .ix-c{{font-family:var(--mono);font-size:.71rem}}
 .star{{color:var(--accent);font-size:.6rem;vertical-align:middle}}
+.ix-out .ix-t{{color:var(--ink-3);font-weight:500}}
+.ix-out{{opacity:.72}}
+.flt{{font-family:var(--mono);font-size:.68rem;color:var(--heat);border:1px solid var(--heat-soft);border-radius:3px;padding:0 .3rem;margin-left:.35rem;white-space:nowrap}}
 .empty{{padding:2rem .25rem;font-family:var(--sans);font-size:.9rem;color:var(--ink-3)}}
 
 footer.note{{margin-top:clamp(3rem,7vw,5rem);border-top:1px solid var(--rule);background:var(--surface)}}
@@ -212,15 +219,15 @@ html{{scroll-behavior:smooth}}
   <div>
    <p class="lab">Research directions from IEEE Open Journal of the Computer Society &middot; ISSN 2644-1268</p>
    <h1>Open Journal <em>Radar</em></h1>
-   <p class="mast-sub">Six research directions argued from a scan of {len(rows)} open-access papers, weighted toward software engineering, data platforms and applied forecasting rather than security. Each names a gap the corpus leaves open, cites the papers that establish it, and says why the gap has persisted. Papers are cited and linked, never reproduced.</p>
+   <p class="mast-sub">Six research directions argued from {len(rows)} eligible open-access papers. A standing filter removes security, privacy, fraud and governance work before anything is read &mdash; {len(filtered)} papers this run. Each direction names a gap the corpus leaves open, cites the papers that establish it, and says why the gap has persisted.</p>
   </div>
-  <p class="stamp"><b>{STAMP}</b>{len(rows)} papers scanned<br>{len(cited)} cited across 6 directions<br>Volumes 6&ndash;7 &middot; 2025&ndash;2026</p>
+  <p class="stamp"><b>{STAMP}</b>{len(all_rows)} scanned &middot; {len(filtered)} filtered<br>{len(rows)} eligible &middot; {len(cited)} cited<br>Volumes 6&ndash;7 &middot; 2025&ndash;2026</p>
  </div>
  <div class="stats">
   <div class="stat"><span class="n">{len(IDEAS)}</span><span class="k">Research directions</span></div>
-  <div class="stat"><span class="n">{len(rows)}</span><span class="k">Papers scanned</span></div>
+  <div class="stat"><span class="n">{len(rows)}</span><span class="k">Eligible papers</span></div>
   <div class="stat"><span class="n">{len(cited)}</span><span class="k">Papers cited</span></div>
-  <div class="stat"><span class="n">{sum(1 for r in rows if r['year']==2026)}</span><span class="k">Published in 2026</span></div>
+  <div class="stat"><span class="n">{len(filtered)}</span><span class="k">Filtered out</span></div>
   <div class="stat"><span class="n">{ledger_n}</span><span class="k">In scan ledger</span></div>
  </div>
 </header>
@@ -234,16 +241,17 @@ html{{scroll-behavior:smooth}}
 
 <section class="band">
  <div class="sec-head"><h2>Where the volume is</h2><p>All {len(rows)} scanned papers by cluster. The solid segment marks how many a direction above cites.</p></div>
- <p class="excl"><b>Security is deliberately out of scope.</b> It is a substantial cluster here and a well-trodden one to publish into. The directions above are drawn from the other {nonsec} papers, where the methodological openings are wider and the competition thinner.</p>
+ <p class="excl"><b>A standing filter runs before the corpus is read.</b> {filt_str} &mdash; {len(filtered)} of {len(all_rows)} papers this run &mdash; are removed from the candidate pool, so no direction can be built on them. Matching is on titles only: auto-assigned topic tags are too noisy, and would have cut reliability and forecasting work that is not excluded work at all. Filtered papers still appear in the index below, marked, so the filter stays auditable.</p>
  <div class="fm-legend"><span><i class="sw a"></i> Cited by a direction</span><span><i class="sw b"></i> Scanned, not cited</span></div>
  <div class="fm">{''.join(bars)}</div>
 </section>
 
 <section class="band" id="index">
- <div class="sec-head"><h2>Every paper scanned</h2><p>All {len(rows)} open-access papers in this scan, each linking to the publisher. A {'&#9679;'} marks a paper cited by a direction above.</p></div>
+ <div class="sec-head"><h2>Every paper scanned</h2><p>All {len(all_rows)} papers this run, each linking to the publisher. {'&#9679;'} marks a paper cited by a direction; greyed rows were removed by the standing filter.</p></div>
  <div class="controls">
   <input class="search" id="q" type="search" placeholder="Search titles, authors, clusters&hellip;" aria-label="Search scanned papers">
-  <button class="sortbtn" id="onlycited" aria-pressed="false">Only cited papers</button>
+  <button class="sortbtn" id="onlycited" aria-pressed="false">Only cited</button>
+  <button class="sortbtn" id="hidefiltered" aria-pressed="false">Hide filtered</button>
   <div class="chips" id="chips">{chipbar}</div>
  </div>
  <ol class="index" id="ix-list">{''.join(idx)}</ol>
@@ -255,7 +263,7 @@ html{{scroll-behavior:smooth}}
 <footer class="note">
  <div class="wrap">
   <p class="lab">Method</p>
-  <p>Clusters use title-first keyword rules with a topic-weighted fallback; an earlier revision over-matched security terms and has been corrected. IEEE Xplore refuses automated requests, so bibliographic records come from <b>OpenAlex</b> filtered to ISSN <code>2644-1268</code>, covering {len(rows)} research articles published from January 2025 onward. Front matter and reviewer lists are excluded. Clusters are assigned by keyword matching over titles and indexed topics &mdash; useful for orientation, not authoritative.</p>
+  <p>The standing filter lives in <code>tools/topic_filter.py</code> and runs on every scan, so exclusions persist across runs rather than being reapplied by hand. Clusters use title-first keyword rules with a topic-weighted fallback; an earlier revision over-matched security terms and has been corrected. IEEE Xplore refuses automated requests, so bibliographic records come from <b>OpenAlex</b> filtered to ISSN <code>2644-1268</code>, covering {len(rows)} research articles published from January 2025 onward. Front matter and reviewer lists are excluded. Clusters are assigned by keyword matching over titles and indexed topics &mdash; useful for orientation, not authoritative.</p>
 
   <div class="rights">
    <p><b>On rights.</b> This page reproduces no abstracts and no article text. What it contains is bibliographic fact &mdash; title, authors, year, citation count, DOI &mdash; plus original analysis written for this brief. Every paper links to the publisher of record, where IEEE&rsquo;s open-access licence terms apply. The research directions are argued from the corpus, not extracted from it; the citations exist so each claim can be checked at the source.</p>
@@ -276,17 +284,19 @@ html{{scroll-behavior:smooth}}
  var items=[].slice.call(document.querySelectorAll('.ix'));
  var q=document.getElementById('q'),empty=document.getElementById('empty');
  var chips=[].slice.call(document.querySelectorAll('.chip')),only=document.getElementById('onlycited');
- var active=null,citedOnly=false;
+ var hidef=document.getElementById('hidefiltered');
+ var active=null,citedOnly=false,hideFiltered=false;
  function apply(){{
   var t=q.value.trim().toLowerCase(),shown=0;
   items.forEach(function(el){{
-   var ok=(!active||el.dataset.cluster===active)&&(!t||el.dataset.text.indexOf(t)>-1)&&(!citedOnly||el.dataset.cited==='1');
+   var ok=(!active||el.dataset.cluster===active)&&(!t||el.dataset.text.indexOf(t)>-1)&&(!citedOnly||el.dataset.cited==='1')&&(!hideFiltered||el.dataset.filtered==='0');
    el.classList.toggle('hidden',!ok); if(ok)shown++;
   }});
   empty.hidden=shown>0;
  }}
  q.addEventListener('input',apply);
  only.addEventListener('click',function(){{citedOnly=!citedOnly;only.setAttribute('aria-pressed',citedOnly?'true':'false');apply();}});
+ hidef.addEventListener('click',function(){{hideFiltered=!hideFiltered;hidef.setAttribute('aria-pressed',hideFiltered?'true':'false');apply();}});
  chips.forEach(function(c){{
   c.setAttribute('aria-pressed','false');
   c.addEventListener('click',function(){{

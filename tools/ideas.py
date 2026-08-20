@@ -15,17 +15,17 @@ IDEAS = [
  "venue":"Applied systems work fits the venue; the accretion curve is the figure that sells it."
 },
 {
- "id":"catalog",
- "tag":"Underserved problem",
- "kicker":"Data platform engineering",
- "title":"Data quality research cleans the rows. The catalog is what rots.",
- "thesis":"Enterprise catalogs are accurate on day one and quietly wrong by month six, and no pipeline stage would ever notice.",
- "gap":"<b>Integrating AI and Large Language Models for Automated Data Quality Enhancement in Data Integration Pipelines</b> frames quality as record-level cleaning at pipeline time &mdash; nulls, formats, duplicates, conflicts. That is the well-studied half. The unstudied half is <b>metadata decay</b>: catalog entries, lineage edges, ownership records and glossary definitions drifting away from the data they describe, silently. The adjacent machinery is all present in the corpus &mdash; <b>Maximizing Unlabeled Data Utility with Improved Representation Learning and Pseudo Labeling</b> for cheap labels, <b>Human-in-the-Loop Feature Selection with an Interpretable Kolmogorov-Arnold Network</b> for routing judgement to a person, <b>Multi-Layer Subspace Knowledge Transfer for Open-Set Recognition</b> for unseen categories &mdash; but nobody has aimed it at the catalog.",
- "proposal":"Define and measure <b>catalog entropy</b>: divergence between what a catalog declares about a dataset and what the data shows, tracked over time. Then a steward-in-the-loop repair agent that proposes corrections with calibrated confidence and escalates only uncertain cases. The decisive metric is <b>steward-minutes per corrected entry</b> &mdash; governance programmes fail on labour cost, not on model accuracy.",
- "experiment":"Instrument a catalog over a multi-source estate, inject schema and semantic drift on a controlled schedule, and measure detection latency, false-repair rate and steward load. A negative result &mdash; that a confident agent costs more than none, because stewards must verify everything regardless &mdash; is publishable and immediately useful.",
- "barrier":"Metadata decay has no benchmark and no public dataset, because catalogs are internal artefacts and their decay is embarrassing. Constructing ground truth means either instrumenting a live estate for months or building a drift simulator credible enough that reviewers accept it &mdash; and neither is a weekend project.",
- "effort":"12&ndash;16 weeks",
- "venue":"Genuinely open niche; data governance is under-published relative to what it costs industry."
+ "id":"retrieval",
+ "tag":"Two literatures, no overlap",
+ "kicker":"Retrieval systems",
+ "title":"Metric indexing and vector search are the same problem, published in different rooms",
+ "thesis":"A decades-old literature with provable recall guarantees sits beside a new one with none, and the venue is publishing both without either citing the other.",
+ "gap":"Three papers here work classical similarity search with real rigour: <b>Gaussian Kernel-Based LSH for High-Dimensional Similarity Search</b>, <b>Include-Slim: Supporting Similarity Retrieval Variants With a Metric Access Method</b>, and <b>A Framework for Predictive Similarity Queries Over Heterogeneous Metric Spaces</b>. Separately, <b>H2-Cache</b> accelerates generative diffusion through hierarchical caching, and <b>SINdex</b> proposes a semantic inconsistency index for detecting hallucination in LLMs. Nobody joins them. The metric-access-method community has spent decades establishing what an index guarantees about recall; the retrieval-augmented generation community ships approximate indexes with tuned-by-vibes parameters and then measures hallucination downstream as if it were purely a model property. Same mathematical object, two vocabularies, no shared evaluation.",
+ "proposal":"Establish the missing chain: <b>index recall &rarr; retrieval quality &rarr; generation faithfulness</b>. Define <b>retrieval-induced hallucination</b> &mdash; the share of unfaithful output attributable to the index failing to return a relevant document, rather than to the generator ignoring one it received. That distinction is currently unmeasurable, so every RAG hallucination is blamed on the model. Then bring the metric-access-method guarantees to bear on the operating point: what recall does a deployment actually need, and what does it cost?",
+ "experiment":"Fix a corpus and a question set. Sweep an approximate index across its accuracy knob &mdash; HNSW <code>efSearch</code>, IVF <code>nprobe</code> &mdash; to trace measured recall@k from roughly 0.5 to 1.0, and at each point measure generation faithfulness. The interesting outcome is the shape: if faithfulness collapses sharply within a narrow recall band, that band is an operating-point finding every RAG deployment needs and nobody has published.",
+ "barrier":"The two communities publish in different venues, use different names for the same structure, and neither owns the whole pipeline &mdash; database researchers do not run generators, and NLP researchers treat the index as a black box they did not build. Faithfulness evaluation is also expensive and contested, so the end-to-end experiment is nobody\u2019s natural next paper.",
+ "effort":"10&ndash;14 weeks",
+ "venue":"The venue already publishes both halves, which makes it an unusually receptive home for the bridge."
 },
 {
  "id":"forecast",

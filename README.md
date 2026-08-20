@@ -12,7 +12,7 @@ Currently pointed at **IEEE Open Journal of the Computer Society** (ISSN 2644-12
 
 ## Latest scan
 
-`scans/2026-08-19-21-50/` — 235 papers scanned, 29 cited across 6 directions.
+`scans/2026-08-19-21-50/` — 235 papers scanned, 63 removed by the standing filter, 172 eligible, 32 cited across 6 directions.
 
 | File | What it is |
 |---|---|
@@ -21,6 +21,26 @@ Currently pointed at **IEEE Open Journal of the Computer Society** (ISSN 2644-12
 | `scan-summary.md` | Cluster breakdown and every paper scanned, linked |
 | `papers.json` | Bibliographic records for the run |
 | `radar.html` | Standalone interactive page — open it in a browser |
+
+## Standing topic filter
+
+`tools/topic_filter.py` holds a persistent exclusion list applied on **every** scan, so
+unwanted themes never reach the candidate pool and the preference does not have to be
+restated each run. Current exclusions: **security, privacy, fraud, governance**.
+
+Filtered papers are not deleted. They stay in `papers.json` and the ledger tagged with
+`excluded_by`, and appear greyed in the scan summary — so the corpus record stays
+complete and the filter stays auditable.
+
+Matching is on **titles only**, deliberately. OpenAlex `topics` and `concepts` are
+auto-assigned and noisy: an AIOps paper on log and metric anomalies picks up "Advanced
+Malware Detection Techniques", and a cryptocurrency forecasting paper picks up security
+topics from the word "crypto". Matching those fields cut reliability and forecasting work
+that was not excluded work at all. The trade-off is that a paper with a neutral title can
+slip through — the better failure mode, and title matching keeps the reason a paper was
+cut visible in its own name.
+
+Edit `EXCLUSIONS` to change it; each entry is a case-insensitive regex.
 
 ## Running a scan
 

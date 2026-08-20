@@ -38,7 +38,10 @@
    "Artificial intelligence",
    "Graph"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4407690503",
@@ -69,7 +72,11 @@
   "concepts": [
    "Computer security"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W4412482272",
@@ -100,7 +107,10 @@
    "The Internet",
    "Business"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4412971785",
@@ -140,7 +150,10 @@
    "Federated learning",
    "Data science"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W4406946688",
@@ -177,7 +190,10 @@
    "Metaverse",
    "Engineering ethics"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "governance"
+  ]
  },
  {
   "id": "W4407127863",
@@ -210,7 +226,10 @@
    "Factor (programming language)",
    "Computer security"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4409014702",
@@ -251,7 +270,10 @@
    "Artificial intelligence",
    "Flood myth"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W4415593441",
@@ -290,7 +312,8 @@
    "Artificial intelligence",
    "Transformer"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4407127889",
@@ -325,7 +348,8 @@
    "Scalability",
    "Transformer"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": []
  },
  {
   "id": "W7118190454",
@@ -359,7 +383,8 @@
    "Population ageing",
    "Psychology"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4407008821",
@@ -394,7 +419,8 @@
    "Systematic review",
    "Cognitive science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4414165965",
@@ -428,7 +454,8 @@
    "Data mining",
    "Software"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W4409882607",
@@ -463,7 +490,10 @@
    "Orchestration",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4411336526",
@@ -494,7 +524,10 @@
    "Computer science",
    "Cyber threats"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4411358560",
@@ -524,7 +557,8 @@
    "Power (physics)",
    "Power budget"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4412107091",
@@ -556,7 +590,8 @@
    "Computer science",
    "Artificial intelligence"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4414229261",
@@ -589,7 +624,8 @@
    "Artificial intelligence",
    "Embedding"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4412793692",
@@ -627,7 +663,10 @@
    "Machine learning",
    "Autonomous learning"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4406046452",
@@ -665,7 +704,8 @@
    "Crowdsourcing",
    "Artificial intelligence"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4406258402",
@@ -704,7 +744,8 @@
    "Anomaly detection",
    "Feature (linguistics)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4407007798",
@@ -738,7 +779,11 @@
    "Homomorphic filtering",
    "Internet privacy"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W4408590852",
@@ -779,7 +824,8 @@
    "Computer science",
    "Machine learning"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": []
  },
  {
   "id": "W4409723463",
@@ -813,7 +859,10 @@
    "Orchestration",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4409723615",
@@ -842,7 +891,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4409795911",
@@ -881,7 +931,8 @@
    "Deep learning",
    "Multi-swarm optimization"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4411949448",
@@ -912,7 +963,10 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4412374975",
@@ -947,7 +1001,10 @@
    "Fuzzy logic",
    "Computer network"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4409683785",
@@ -982,7 +1039,8 @@
    "Architecture",
    "Neuroscience"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4410295010",
@@ -1023,7 +1081,8 @@
    "Segmentation",
    "Computer architecture"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W4410393481",
@@ -1057,7 +1116,10 @@
    "Credit card fraud",
    "Computer security"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4411550737",
@@ -1097,7 +1159,10 @@
    "Artificial neural network",
    "Artificial intelligence"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4406090096",
@@ -1138,7 +1203,10 @@
    "Cyber threats",
    "Data science"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4410117786",
@@ -1174,7 +1242,10 @@
    "Software",
    "Computer security"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4410152860",
@@ -1209,7 +1280,10 @@
    "Transformer",
    "Artificial intelligence"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4410294513",
@@ -1245,7 +1319,8 @@
   "concepts": [
    "Opposition (politics)"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4411171625",
@@ -1286,7 +1361,8 @@
    "Bayesian network",
    "Fault detection and isolation"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4411336598",
@@ -1321,7 +1397,8 @@
    "Bayesian probability",
    "Computer science"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": []
  },
  {
   "id": "W4412836984",
@@ -1355,7 +1432,8 @@
    "Deep learning",
    "Fusion"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W4406137491",
@@ -1387,7 +1465,8 @@
    "Computer science",
    "Linguistics"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4411446311",
@@ -1419,7 +1498,10 @@
    "Computer science",
    "Intrusion detection system"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4411639757",
@@ -1449,7 +1531,8 @@
    "Artificial intelligence",
    "Medicine"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W4415047899",
@@ -1488,7 +1571,11 @@
    "False positive paradox",
    "Artificial intelligence"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W4416749130",
@@ -1530,7 +1617,8 @@
    "Transformer",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7104030194",
@@ -1563,7 +1651,10 @@
    "Internet of Things",
    "Internet privacy"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W4406857830",
@@ -1597,7 +1688,8 @@
    "Satellite",
    "Fast Kalman filter"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4410640021",
@@ -1634,7 +1726,8 @@
    "Natural language processing",
    "Agriculture"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7130413264",
@@ -1672,7 +1765,8 @@
    "Psychology",
    "Modality (human\u2013computer interaction)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7155525327",
@@ -1711,7 +1805,8 @@
    "Reinforcement learning",
    "Mathematical optimization"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4408030005",
@@ -1746,7 +1841,8 @@
    "Correlation",
    "Artificial intelligence"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4410886728",
@@ -1783,7 +1879,8 @@
    "Image (mathematics)",
    "Computer science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4411232076",
@@ -1825,7 +1922,8 @@
    "Bayesian probability",
    "Electricity price forecasting"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4412610028",
@@ -1860,7 +1958,8 @@
    "Computer science",
    "Artificial intelligence"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4414229142",
@@ -1896,7 +1995,8 @@
    "Computer science",
    "Machine learning"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4414955787",
@@ -1929,7 +2029,8 @@
    "Data transmission",
    "Telecommunications"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7123361322",
@@ -1963,7 +2064,8 @@
    "Machine learning",
    "Random forest"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7128481588",
@@ -1999,7 +2101,8 @@
    "Data integrity",
    "Hash function"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7131211770",
@@ -2038,7 +2141,8 @@
    "Workload",
    "Bridging (networking)"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W4406753809",
@@ -2072,7 +2176,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4414693642",
@@ -2107,7 +2212,8 @@
    "Data mining",
    "Machine learning"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4409762908",
@@ -2141,7 +2247,10 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4409426851",
@@ -2173,7 +2282,8 @@
    "Artificial intelligence",
    "Translation (biology)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4409882644",
@@ -2213,7 +2323,8 @@
    "Computer science",
    "Aerial imagery"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4406890640",
@@ -2243,7 +2354,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4409882600",
@@ -2277,7 +2389,8 @@
    "Conformational isomerism",
    "Natural language processing"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4410358615",
@@ -2308,7 +2421,10 @@
    "Domain (mathematical analysis)",
    "Secret sharing"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4410491882",
@@ -2343,7 +2459,8 @@
    "Computer science",
    "Electronics"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4410582647",
@@ -2379,7 +2496,11 @@
    "Computer science",
    "Differential (mechanical device)"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W4410737589",
@@ -2416,7 +2537,8 @@
    "Identity (music)",
    "Computer science"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": []
  },
  {
   "id": "W4411019474",
@@ -2453,7 +2575,8 @@
    "Traffic classification",
    "Artificial intelligence"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4414165774",
@@ -2487,7 +2610,10 @@
    "Computer security",
    "Computer network"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4406610100",
@@ -2525,7 +2651,8 @@
    "Ultra-wideband",
    "Computer vision"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4411639778",
@@ -2562,7 +2689,10 @@
    "Graph",
    "Scale (ratio)"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W4412081495",
@@ -2597,7 +2727,8 @@
    "Computer science",
    "Time series"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412081496",
@@ -2636,7 +2767,8 @@
    "Reinforcement",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412375751",
@@ -2675,7 +2807,8 @@
    "Deep learning",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4412623358",
@@ -2716,7 +2849,8 @@
    "Computer science",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4413349645",
@@ -2750,7 +2884,8 @@
    "Artificial intelligence",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4413472110",
@@ -2789,7 +2924,8 @@
    "Computer science",
    "Segmentation"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4415003080",
@@ -2829,7 +2965,8 @@
    "Machine learning",
    "Key (lock)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7115711505",
@@ -2863,7 +3000,8 @@
    "Database transaction",
    "Block (permutation group theory)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7116854676",
@@ -2901,7 +3039,8 @@
    "Modalities",
    "Stress (linguistics)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7117313066",
@@ -2944,7 +3083,10 @@
    "Artificial intelligence",
    "Machine learning"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7123360095",
@@ -2982,7 +3124,8 @@
    "Volatility smile",
    "Implied volatility"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": []
  },
  {
   "id": "W7130536996",
@@ -3015,7 +3158,8 @@
    "Ontology",
    "Benchmark (surveying)"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W4410027808",
@@ -3046,7 +3190,8 @@
    "Bridging (networking)",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412623360",
@@ -3081,7 +3226,10 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4417251818",
@@ -3121,7 +3269,8 @@
    "Machine learning",
    "Robustness (evolution)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W4406046645",
@@ -3158,7 +3307,8 @@
    "Computer science",
    "Energy (signal processing)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4411019470",
@@ -3190,7 +3340,8 @@
    "Computer science",
    "Code (set theory)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4413468215",
@@ -3235,7 +3386,8 @@
    "Industrial production",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4409048419",
@@ -3269,7 +3421,8 @@
    "Duplex (building)",
    "Computer science"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4410294790",
@@ -3306,7 +3459,8 @@
    "Tracking (education)",
    "Open source"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4411799581",
@@ -3340,7 +3494,8 @@
    "Object (grammar)",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412801932",
@@ -3374,7 +3529,8 @@
    "Computer science",
    "Environmental science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4413786007",
@@ -3406,7 +3562,8 @@
    "Computer science",
    "Energy (signal processing)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4409310981",
@@ -3441,7 +3598,8 @@
    "Computer science",
    "Default gateway"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4411358565",
@@ -3476,7 +3634,8 @@
    "Computer science",
    "Artificial intelligence"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412536708",
@@ -3509,7 +3668,8 @@
    "Data mining",
    "Database"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4413007914",
@@ -3540,7 +3700,8 @@
   "concepts": [
    "Architecture"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4413371192",
@@ -3573,7 +3734,8 @@
    "Natural language processing",
    "Computer science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4413556623",
@@ -3609,7 +3771,8 @@
    "Gaussian function",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4414798719",
@@ -3651,7 +3814,8 @@
    "Resilience (materials science)",
    "Mean squared error"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": []
  },
  {
   "id": "W4415593442",
@@ -3689,7 +3853,8 @@
    "Verification",
    "High-level verification"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4416707061",
@@ -3731,7 +3896,8 @@
    "Deep learning",
    "Robustness (evolution)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W4416707074",
@@ -3765,7 +3931,8 @@
    "Artificial intelligence",
    "Reinforcement"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": []
  },
  {
   "id": "W4416748380",
@@ -3807,7 +3974,10 @@
    "Adversarial system",
    "Machine learning"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4417168905",
@@ -3841,7 +4011,10 @@
    "Block (permutation group theory)",
    "Benchmark (surveying)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W7103885188",
@@ -3874,7 +4047,8 @@
    "Adaptability",
    "Generalization"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7117115043",
@@ -3907,7 +4081,8 @@
    "Dynamic priority scheduling",
    "Distributed computing"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7117302505",
@@ -3942,7 +4117,10 @@
    "Computer security",
    "Industrial Internet"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7123345165",
@@ -3978,7 +4156,10 @@
    "Situation awareness",
    "Key (lock)"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7127588238",
@@ -4016,7 +4197,11 @@
    "NIST",
    "Interoperability"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W7128511268",
@@ -4054,7 +4239,8 @@
    "Drone",
    "Artificial intelligence"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7128702750",
@@ -4087,7 +4273,10 @@
    "Adversarial system",
    "Access control"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7130365570",
@@ -4126,7 +4315,10 @@
    "Computer security",
    "Order (exchange)"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W7138891491",
@@ -4168,7 +4360,8 @@
    "Modalities",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7151622952",
@@ -4197,7 +4390,8 @@
    "Computer science",
    "Path (computing)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7152100989",
@@ -4235,7 +4429,8 @@
    "Mental model",
    "Data mining"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7160054890",
@@ -4269,7 +4464,8 @@
    "Benchmarking",
    "Optometry"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7160240718",
@@ -4300,7 +4496,10 @@
   "concepts": [
    "Knowledge management"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W7171956804",
@@ -4339,7 +4538,11 @@
    "Analytics",
    "Health care"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": [
+   "governance",
+   "security"
+  ]
  },
  {
   "id": "W4409311090",
@@ -4373,7 +4576,8 @@
    "Iterative reconstruction",
    "Electrical impedance"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4411799588",
@@ -4407,7 +4611,8 @@
    "Computer science",
    "Excitation"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4409356860",
@@ -4445,7 +4650,8 @@
    "Fingerprint (computing)",
    "B-spline"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4410737475",
@@ -4479,7 +4685,8 @@
    "Linguistics",
    "Artificial intelligence"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4411336562",
@@ -4512,7 +4719,8 @@
    "Climatology",
    "Environmental science"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4411725222",
@@ -4547,7 +4755,8 @@
    "Artificial intelligence",
    "Graph"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4417168919",
@@ -4584,7 +4793,8 @@
    "Action selection",
    "Selection (genetic algorithm)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4404361647",
@@ -4624,7 +4834,8 @@
    "Selection (genetic algorithm)",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4406258894",
@@ -4649,7 +4860,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4406354261",
@@ -4668,7 +4880,8 @@
    "Human auditory perception and evaluation"
   ],
   "concepts": [],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4407899926",
@@ -4701,7 +4914,8 @@
    "Econometrics",
    "Set (abstract data type)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4409916899",
@@ -4732,7 +4946,10 @@
    "Selection (genetic algorithm)",
    "Computer science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W4410537681",
@@ -4765,7 +4982,8 @@
    "Computer science",
    "Psychology"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4411446187",
@@ -4800,7 +5018,8 @@
    "Face (sociological concept)",
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4411996073",
@@ -4839,7 +5058,8 @@
    "Computer science",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412482275",
@@ -4880,7 +5100,10 @@
    "Computer vision",
    "Image (mathematics)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4412536233",
@@ -4910,7 +5133,8 @@
    "Computer science",
    "Operating system"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4412610083",
@@ -4942,7 +5166,8 @@
    "Probabilistic logic",
    "Artificial intelligence"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4412623387",
@@ -4974,7 +5199,10 @@
    "Computer security",
    "Computer science"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4413007906",
@@ -5014,7 +5242,10 @@
    "Protocol (science)",
    "Image (mathematics)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4413277245",
@@ -5046,7 +5277,8 @@
    "Computer science",
    "Order (exchange)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4414153865",
@@ -5080,7 +5312,8 @@
    "Power (physics)",
    "Reduction (mathematics)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4415082744",
@@ -5114,7 +5347,8 @@
    "Software regression",
    "Support vector machine"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W4415293160",
@@ -5152,7 +5386,8 @@
    "Benchmark (surveying)",
    "Synthetic data"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4415353266",
@@ -5186,7 +5421,8 @@
    "Data mining",
    "Process (computing)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4415482318",
@@ -5219,7 +5455,8 @@
    "Overhead (engineering)",
    "Derating"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W4415626641",
@@ -5261,7 +5498,8 @@
    "Data mining",
    "Artificial intelligence"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W4415747979",
@@ -5299,7 +5537,8 @@
    "Pattern recognition (psychology)",
    "Computer vision"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W4415971199",
@@ -5340,7 +5579,8 @@
    "Artificial intelligence",
    "Financial ratio"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4416010394",
@@ -5377,7 +5617,8 @@
    "Waste management",
    "Hazardous waste"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4416019963",
@@ -5409,7 +5650,8 @@
    "Service provider",
    "Authentication (law)"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": []
  },
  {
   "id": "W4416156139",
@@ -5448,7 +5690,8 @@
    "Language model",
    "Graph"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4416255021",
@@ -5487,7 +5730,8 @@
    "Machine learning",
    "Deep learning"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": []
  },
  {
   "id": "W4416286284",
@@ -5525,7 +5769,8 @@
    "Task (project management)",
    "Machine learning"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W4416649608",
@@ -5561,7 +5806,10 @@
    "Robustness (evolution)",
    "Computer vision"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4416925966",
@@ -5598,7 +5846,10 @@
    "The Internet",
    "Variety (cybernetics)"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4416965660",
@@ -5636,7 +5887,8 @@
    "Process (computing)",
    "Key (lock)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4417168910",
@@ -5673,7 +5925,8 @@
    "Software deployment",
    "Encoder"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4417284335",
@@ -5711,7 +5964,10 @@
    "Computer security",
    "Computer science"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W4417508309",
@@ -5731,7 +5987,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W4417508314",
@@ -5753,7 +6010,8 @@
    "Computer science",
    "Library science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7103896210",
@@ -5790,7 +6048,10 @@
    "Multiplier (economics)",
    "Modular arithmetic"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7111253063",
@@ -5832,7 +6093,8 @@
    "Ranking (information retrieval)",
    "Artificial intelligence"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7116876364",
@@ -5861,7 +6123,8 @@
    "Artificial intelligence",
    "Pattern recognition (psychology)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7117721770",
@@ -5896,7 +6159,11 @@
    "Naturalness",
    "Scalability"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "governance",
+   "security"
+  ]
  },
  {
   "id": "W7117867491",
@@ -5931,7 +6198,8 @@
    "Machine learning",
    "Embedding"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7123340583",
@@ -5973,7 +6241,8 @@
    "Event (particle physics)",
    "Key (lock)"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7123348677",
@@ -6010,7 +6279,10 @@
    "Scalability",
    "Data science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7123712497",
@@ -6049,7 +6321,8 @@
    "Feature (linguistics)",
    "Inference"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7123868849",
@@ -6088,7 +6361,8 @@
    "Machine learning",
    "Deep learning"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": []
  },
  {
   "id": "W7124156919",
@@ -6126,7 +6400,8 @@
    "Computational biology",
    "Medicine"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7124429428",
@@ -6167,7 +6442,8 @@
    "Vocabulary",
    "Class (philosophy)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7125970785",
@@ -6202,7 +6478,8 @@
    "Behavioral modeling",
    "Machine learning"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7127402463",
@@ -6237,7 +6514,8 @@
    "Geospatial analysis",
    "Online advertising"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7128305130",
@@ -6273,7 +6551,8 @@
    "Distributed computing",
    "Wireless sensor network"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7128527337",
@@ -6307,7 +6586,8 @@
    "Key (lock)",
    "Digital signature"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7133207287",
@@ -6345,7 +6625,10 @@
    "Resource (disambiguation)",
    "Computer security"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7138849099",
@@ -6378,7 +6661,8 @@
    "Artificial intelligence",
    "Speech recognition"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7138850441",
@@ -6420,7 +6704,8 @@
    "Artificial intelligence",
    "Missing data"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7139118925",
@@ -6457,7 +6742,8 @@
    "Decision tree",
    "Machine learning"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7139949060",
@@ -6491,7 +6777,8 @@
    "Computer science",
    "Metric (unit)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7151476019",
@@ -6530,7 +6817,10 @@
    "Scalability",
    "Computer network"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7151504173",
@@ -6559,7 +6849,8 @@
    "Computer science",
    "Artificial intelligence"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W7152557146",
@@ -6593,7 +6884,8 @@
    "Mathematics",
    "Representation (politics)"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W7152673886",
@@ -6625,7 +6917,8 @@
    "Computer science",
    "Energy (signal processing)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7153160497",
@@ -6663,7 +6956,8 @@
    "Artificial intelligence",
    "Subspace topology"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W7154031956",
@@ -6697,7 +6991,10 @@
    "Selection (genetic algorithm)",
    "Federated learning"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W7154600195",
@@ -6730,7 +7027,8 @@
    "Computer science",
    "Transformer"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7154625518",
@@ -6763,7 +7061,11 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "governance",
+   "security"
+  ]
  },
  {
   "id": "W7154967759",
@@ -6797,7 +7099,10 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7154981914",
@@ -6832,7 +7137,10 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7154983296",
@@ -6865,7 +7173,8 @@
    "Computer science",
    "Precision medicine"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7155439760",
@@ -6897,7 +7206,8 @@
    "Artificial intelligence",
    "Similarity (geometry)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7155913545",
@@ -6929,7 +7239,10 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W7158486338",
@@ -6967,7 +7280,8 @@
    "Artificial intelligence",
    "Ensemble forecasting"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W7159936375",
@@ -7003,7 +7317,8 @@
    "Transformer",
    "Face (sociological concept)"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7159960550",
@@ -7046,7 +7361,8 @@
    "Transfer of learning",
    "Computer science"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7159965284",
@@ -7084,7 +7400,8 @@
    "Artificial intelligence",
    "Detector"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7160120027",
@@ -7123,7 +7440,10 @@
    "Graph",
    "Artificial intelligence"
   ],
-  "cluster": "Fraud & Financial Analytics"
+  "cluster": "Fraud & Financial Analytics",
+  "excluded_by": [
+   "fraud"
+  ]
  },
  {
   "id": "W7160236997",
@@ -7158,7 +7478,8 @@
    "Computer science",
    "Internet of Things"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": []
  },
  {
   "id": "W7160238021",
@@ -7192,7 +7513,10 @@
    "Artificial intelligence",
    "Ransomware"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7160292828",
@@ -7232,7 +7556,8 @@
    "Orthodontics",
    "Computer vision"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7160322583",
@@ -7263,7 +7588,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7160324152",
@@ -7297,7 +7623,10 @@
    "Distributed computing",
    "Differential privacy"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy"
+  ]
  },
  {
   "id": "W7160383717",
@@ -7333,7 +7662,8 @@
    "Computer science",
    "Underwater"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7160652393",
@@ -7368,7 +7698,8 @@
    "Data mining",
    "Artificial intelligence"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7160918363",
@@ -7408,7 +7739,8 @@
    "Computer science",
    "Maximization"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7160936594",
@@ -7447,7 +7779,8 @@
    "Topology (electrical circuits)",
    "Transformer"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7161137324",
@@ -7485,7 +7818,8 @@
    "Probabilistic logic",
    "Artificial intelligence"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7161141958",
@@ -7520,7 +7854,8 @@
    "Artificial neural network",
    "Artificial intelligence"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7161181360",
@@ -7561,7 +7896,8 @@
    "Demand forecasting",
    "Electricity"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7161686858",
@@ -7600,7 +7936,8 @@
    "Computer science",
    "Thermal"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7161715880",
@@ -7637,7 +7974,8 @@
    "Computer science",
    "Drunk driving"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7161997742",
@@ -7667,7 +8005,8 @@
    "Computer science",
    "Pruning"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7162102384",
@@ -7707,7 +8046,11 @@
    "Selection (genetic algorithm)",
    "Computer security"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W7162319606",
@@ -7745,7 +8088,8 @@
    "Computer science",
    "Heuristics"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7162324188",
@@ -7780,7 +8124,8 @@
    "Medicine",
    "Shock (circulatory)"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7162394583",
@@ -7818,7 +8163,8 @@
    "Artificial intelligence",
    "Psychology"
   ],
-  "cluster": "Software Engineering & AIOps"
+  "cluster": "Software Engineering & AIOps",
+  "excluded_by": []
  },
  {
   "id": "W7162997176",
@@ -7855,7 +8201,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7163026482",
@@ -7897,7 +8244,8 @@
    "Natural language processing",
    "Intensity (physics)"
   ],
-  "cluster": "Applied ML & Forecasting"
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
  },
  {
   "id": "W7163202748",
@@ -7932,7 +8280,8 @@
    "Cloud computing",
    "Scheduling (production processes)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7163707383",
@@ -7972,7 +8321,10 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7163715163",
@@ -8001,7 +8353,11 @@
    "Computer science",
    "Computer security"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W7164001818",
@@ -8031,7 +8387,8 @@
    "Artificial intelligence",
    "Pruning"
   ],
-  "cluster": "Agentic AI & LLM Systems"
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
  },
  {
   "id": "W7164013632",
@@ -8067,7 +8424,8 @@
   "concepts": [
    "Computer science"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7164477423",
@@ -8102,7 +8460,8 @@
    "Representation (politics)",
    "Speech enhancement"
   ],
-  "cluster": "Health & Biomedical AI"
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
  },
  {
   "id": "W7164830002",
@@ -8137,7 +8496,8 @@
    "Artificial intelligence",
    "Mechanism (biology)"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7164893649",
@@ -8176,7 +8536,11 @@
    "Intrusion detection system",
    "Internet of Things"
   ],
-  "cluster": "Privacy & Federated Learning"
+  "cluster": "Privacy & Federated Learning",
+  "excluded_by": [
+   "privacy",
+   "security"
+  ]
  },
  {
   "id": "W7166201170",
@@ -8208,7 +8572,8 @@
    "Computer science",
    "Artificial intelligence"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7168122708",
@@ -8243,7 +8608,8 @@
    "Computer science",
    "Representation (politics)"
   ],
-  "cluster": "Learning Theory & Optimization"
+  "cluster": "Learning Theory & Optimization",
+  "excluded_by": []
  },
  {
   "id": "W7169517328",
@@ -8275,7 +8641,10 @@
    "Computer science",
    "Computer vision"
   ],
-  "cluster": "Security & Threat Detection"
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
  },
  {
   "id": "W7169585461",
@@ -8309,7 +8678,8 @@
    "Computer vision",
    "Radiography"
   ],
-  "cluster": "Multimodal & Vision"
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
  },
  {
   "id": "W7171640085",
@@ -8343,7 +8713,8 @@
    "Scheduling (production processes)",
    "Internet of Things"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  },
  {
   "id": "W7172271678",
@@ -8375,6 +8746,7 @@
    "Artificial intelligence",
    "Graph"
   ],
-  "cluster": "Networks, Cloud & Edge"
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
  }
 ]

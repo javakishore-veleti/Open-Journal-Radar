@@ -1,72 +1,81 @@
 # Scan summary — 2026-08-19-21-50
 
-- **Source:** ISSN 2644-1268, published since 2025-01-01
-- **Papers scanned:** 235 (93 from 2026)
-- **Cited by a direction:** 29
+- **Source:** ISSN 2644-1268, since 2025-01-01
+- **Returned:** 235 · **Eligible:** 172 · **Filtered:** 63
+- **Cited by a direction:** 32
 
-## By cluster
+## Removed by standing filter
+
+| Exclusion | Papers |
+|---|---:|
+| security | 45 |
+| privacy | 16 |
+| fraud | 9 |
+| governance | 4 |
+
+## Eligible by cluster
 
 | Cluster | Papers |
 |---|---:|
-| Networks, Cloud & Edge | 47 |
-| Multimodal & Vision | 38 |
-| Applied ML & Forecasting | 34 |
-| Security & Threat Detection | 23 |
-| Privacy & Federated Learning | 19 |
-| Learning Theory & Optimization | 19 |
-| Health & Biomedical AI | 19 |
-| Agentic AI & LLM Systems | 14 |
-| Fraud & Financial Analytics | 11 |
+| Networks, Cloud & Edge | 43 |
+| Multimodal & Vision | 33 |
+| Applied ML & Forecasting | 31 |
+| Learning Theory & Optimization | 18 |
+| Health & Biomedical AI | 18 |
 | Software Engineering & AIOps | 11 |
+| Agentic AI & LLM Systems | 7 |
+| Fraud & Financial Analytics | 5 |
+| Security & Threat Detection | 4 |
+| Privacy & Federated Learning | 2 |
 
-## All papers scanned
+## All papers
 
-- [FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection](https://doi.org/10.1109/ojcs.2025.3543450) — 2025, 52 cit., _Fraud & Financial Analytics_
-- [Threats, Attacks, and Defenses in Machine Unlearning: A Survey](https://doi.org/10.1109/ojcs.2025.3543483) — 2025, 33 cit., _Privacy & Federated Learning_
-- [Security of Internet of Agents: Attacks and Countermeasures](https://doi.org/10.1109/ojcs.2025.3589638) — 2025, 25 cit., _Agentic AI & LLM Systems_
-- [Optimizing Federated Learning With Aggregation Strategies: A Comprehensive Survey](https://doi.org/10.1109/ojcs.2025.3590102) — 2025, 23 cit., _Privacy & Federated Learning_
-- [Generative AI and the Metaverse: A Scoping Review of Ethical and Legal Challenges](https://doi.org/10.1109/ojcs.2025.3536082) — 2025, 21 cit., _Agentic AI & LLM Systems_
-- [Enhancing Cloud Security: A Multi-Factor Authentication and Adaptive Cryptography Approach Using Machine Learning Techniques](https://doi.org/10.1109/ojcs.2025.3538557) — 2025, 21 cit., _Security & Threat Detection_
-- [Advanced Hydro-Informatic Modeling Through Feedforward Neural Network, Federated Learning, and Explainable AI for Enhancing Flood Prediction](https://doi.org/10.1109/ojcs.2025.3556424) — 2025, 20 cit., _Privacy & Federated Learning_
+- [FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection](https://doi.org/10.1109/ojcs.2025.3543450) — 2025, 52 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
+- [Threats, Attacks, and Defenses in Machine Unlearning: A Survey](https://doi.org/10.1109/ojcs.2025.3543483) — 2025, 33 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
+- [Security of Internet of Agents: Attacks and Countermeasures](https://doi.org/10.1109/ojcs.2025.3589638) — 2025, 25 cit., _Agentic AI & LLM Systems_ — _filtered: security_
+- [Optimizing Federated Learning With Aggregation Strategies: A Comprehensive Survey](https://doi.org/10.1109/ojcs.2025.3590102) — 2025, 23 cit., _Privacy & Federated Learning_ — _filtered: privacy_
+- [Generative AI and the Metaverse: A Scoping Review of Ethical and Legal Challenges](https://doi.org/10.1109/ojcs.2025.3536082) — 2025, 21 cit., _Agentic AI & LLM Systems_ — _filtered: governance_
+- [Enhancing Cloud Security: A Multi-Factor Authentication and Adaptive Cryptography Approach Using Machine Learning Techniques](https://doi.org/10.1109/ojcs.2025.3538557) — 2025, 21 cit., _Security & Threat Detection_ — _filtered: security_
+- [Advanced Hydro-Informatic Modeling Through Feedforward Neural Network, Federated Learning, and Explainable AI for Enhancing Flood Prediction](https://doi.org/10.1109/ojcs.2025.3556424) — 2025, 20 cit., _Privacy & Federated Learning_ — _filtered: privacy_
 - [Battery SOH Prediction Under Different Conditions via MBLSTM and iTransformer With Anomaly Detection and Explainability](https://doi.org/10.1109/ojcs.2025.3625209) — 2025, 20 cit., _Applied ML & Forecasting_
 - [A Hybrid Temporal Convolutional Network and Transformer Model for Accurate and Scalable Sales Forecasting](https://doi.org/10.1109/ojcs.2025.3538579) — 2025, 17 cit., _Fraud & Financial Analytics_ ●
-- [DriftShield: Autonomous Fraud Detection via Actor-Critic Reinforcement Learning With Dynamic Feature Reweighting](https://doi.org/10.1109/ojcs.2025.3587001) — 2025, 17 cit., _Fraud & Financial Analytics_
+- [DriftShield: Autonomous Fraud Detection via Actor-Critic Reinforcement Learning With Dynamic Feature Reweighting](https://doi.org/10.1109/ojcs.2025.3587001) — 2025, 17 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
 - [Leveraging Deep Learning and Multimodal Large Language Models for Near-Miss Detection Using Crowdsourced Videos](https://doi.org/10.1109/ojcs.2025.3525560) — 2025, 16 cit., _Agentic AI & LLM Systems_ ●
 - [Redefining Elderly Care With Agentic AI: Challenges and Opportunities](https://doi.org/10.1109/ojcs.2026.3650842) — 2026, 14 cit., _Agentic AI & LLM Systems_ ●
 - [The Rise of Cognitive SOCs: A Systematic Literature Review on AI Approaches](https://doi.org/10.1109/ojcs.2025.3536800) — 2025, 13 cit., _Applied ML & Forecasting_
 - [Cross-Modal Attention Networks for Multi-Modal Anomaly Detection in System Software](https://doi.org/10.1109/ojcs.2025.3607975) — 2025, 12 cit., _Software Engineering & AIOps_ ●
-- [Addressing Security Orchestration Challenges in Next-Generation Networks: A Comprehensive Overview](https://doi.org/10.1109/ojcs.2025.3564788) — 2025, 11 cit., _Networks, Cloud & Edge_
-- [Real-Time Automated Cyber Threat Classification and Emerging Threat Detection Framework](https://doi.org/10.1109/ojcs.2025.3580235) — 2025, 11 cit., _Security & Threat Detection_
+- [Addressing Security Orchestration Challenges in Next-Generation Networks: A Comprehensive Overview](https://doi.org/10.1109/ojcs.2025.3564788) — 2025, 11 cit., _Networks, Cloud & Edge_ — _filtered: security_
+- [Real-Time Automated Cyber Threat Classification and Emerging Threat Detection Framework](https://doi.org/10.1109/ojcs.2025.3580235) — 2025, 11 cit., _Security & Threat Detection_ — _filtered: security_
 - [LLMs on a Budget: System-Level Approaches to Power-Efficient and Scalable Fine-Tuning](https://doi.org/10.1109/ojcs.2025.3580498) — 2025, 10 cit., _Agentic AI & LLM Systems_ ●
 - [Benchmarking Variants of the Adam Optimizer for Quantum Machine Learning Applications](https://doi.org/10.1109/ojcs.2025.3586953) — 2025, 10 cit., _Learning Theory & Optimization_
 - [Multimodal Attention-Enhanced Feature Fusion-Based Weakly Supervised Anomaly Violence Detection](https://doi.org/10.1109/ojcs.2024.3517154) — 2025, 9 cit., _Multimodal & Vision_
-- [An Efficient and Privacy-Preserving Federated Learning Approach Based on Homomorphic Encryption](https://doi.org/10.1109/ojcs.2025.3536562) — 2025, 9 cit., _Privacy & Federated Learning_
+- [An Efficient and Privacy-Preserving Federated Learning Approach Based on Homomorphic Encryption](https://doi.org/10.1109/ojcs.2025.3536562) — 2025, 9 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [An Enhanced Deep Learning Approach to Potential Purchaser Prediction: AutoGluon Ensembles for Cross-Industry Profit Maximization](https://doi.org/10.1109/ojcs.2025.3552376) — 2025, 9 cit., _Fraud & Financial Analytics_ ●
-- [Security Orchestration in 5G and Beyond Smart Network Technologies](https://doi.org/10.1109/ojcs.2025.3563619) — 2025, 9 cit., _Networks, Cloud & Edge_
+- [Security Orchestration in 5G and Beyond Smart Network Technologies](https://doi.org/10.1109/ojcs.2025.3563619) — 2025, 9 cit., _Networks, Cloud & Edge_ — _filtered: security_
 - [Emerging Computing Tools for Emergency Management: Applications, Limitations and Future Prospects](https://doi.org/10.1109/ojcs.2025.3563759) — 2025, 9 cit., _Applied ML & Forecasting_
 - [Large Language Model Enhanced Particle Swarm Optimization for Hyperparameter Tuning for Deep Learning Models](https://doi.org/10.1109/ojcs.2025.3564493) — 2025, 9 cit., _Agentic AI & LLM Systems_
-- [A Comprehensive Survey on the Usage of Machine Learning to Detect False Data Injection Attacks in Smart Grids](https://doi.org/10.1109/ojcs.2025.3585248) — 2025, 9 cit., _Security & Threat Detection_
-- [Securing Industrial IoT Environments: A Fuzzy Graph Attention Network for Robust Intrusion Detection](https://doi.org/10.1109/ojcs.2025.3587486) — 2025, 8 cit., _Security & Threat Detection_
+- [A Comprehensive Survey on the Usage of Machine Learning to Detect False Data Injection Attacks in Smart Grids](https://doi.org/10.1109/ojcs.2025.3585248) — 2025, 9 cit., _Security & Threat Detection_ — _filtered: security_
+- [Securing Industrial IoT Environments: A Fuzzy Graph Attention Network for Robust Intrusion Detection](https://doi.org/10.1109/ojcs.2025.3587486) — 2025, 8 cit., _Security & Threat Detection_ — _filtered: security_
 - [An Efficient Neural Cell Architecture for Spiking Neural Networks](https://doi.org/10.1109/ojcs.2025.3563423) — 2025, 7 cit., _Networks, Cloud & Edge_ ●
 - [TuSegNet: A Transformer-Based and Attention-Enhanced Architecture for Brain Tumor Segmentation](https://doi.org/10.1109/ojcs.2025.3569758) — 2025, 7 cit., _Health & Biomedical AI_
-- [Hyphatia: A Card-Not-Present Fraud Detection System Based on Self-Supervised Tabular Learning](https://doi.org/10.1109/ojcs.2025.3570600) — 2025, 7 cit., _Fraud & Financial Analytics_
-- [Hybrid Contrastive Learning With Attention-Based Neural Networks for Robust Fraud Detection in Digital Payment Systems](https://doi.org/10.1109/ojcs.2025.3581950) — 2025, 7 cit., _Fraud & Financial Analytics_
-- [UNSW-MG24: A Heterogeneous Dataset for Cybersecurity Analysis in Realistic Microgrid Systems](https://doi.org/10.1109/ojcs.2025.3564266) — 2025, 7 cit., _Security & Threat Detection_
+- [Hyphatia: A Card-Not-Present Fraud Detection System Based on Self-Supervised Tabular Learning](https://doi.org/10.1109/ojcs.2025.3570600) — 2025, 7 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
+- [Hybrid Contrastive Learning With Attention-Based Neural Networks for Robust Fraud Detection in Digital Payment Systems](https://doi.org/10.1109/ojcs.2025.3581950) — 2025, 7 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
+- [UNSW-MG24: A Heterogeneous Dataset for Cybersecurity Analysis in Realistic Microgrid Systems](https://doi.org/10.1109/ojcs.2025.3564266) — 2025, 7 cit., _Security & Threat Detection_ — _filtered: security_
 - [Kinship Verification Using Hierarchical Structures and Extended Contrastive Learning](https://doi.org/10.1109/ojcs.2025.3610270) — 2025, 6 cit., _Learning Theory & Optimization_
-- [Quantitative Cybersecurity Analysis Framework for Cyber Physical Systems: A Conceptual Approach](https://doi.org/10.1109/ojcs.2024.3520315) — 2025, 6 cit., _Security & Threat Detection_
-- [FOCC: A Synthetically Balanced Federated One-Class-Classification for Cyber Threat Intelligence in Software Defined Networking](https://doi.org/10.1109/ojcs.2025.3567386) — 2025, 6 cit., _Privacy & Federated Learning_
-- [MEViT: Generalization of Deepfake Detection With Meta-Learning EfficientNet Vision Transformer](https://doi.org/10.1109/ojcs.2025.3568044) — 2025, 6 cit., _Multimodal & Vision_
+- [Quantitative Cybersecurity Analysis Framework for Cyber Physical Systems: A Conceptual Approach](https://doi.org/10.1109/ojcs.2024.3520315) — 2025, 6 cit., _Security & Threat Detection_ — _filtered: security_
+- [FOCC: A Synthetically Balanced Federated One-Class-Classification for Cyber Threat Intelligence in Software Defined Networking](https://doi.org/10.1109/ojcs.2025.3567386) — 2025, 6 cit., _Privacy & Federated Learning_ — _filtered: security_
+- [MEViT: Generalization of Deepfake Detection With Meta-Learning EfficientNet Vision Transformer](https://doi.org/10.1109/ojcs.2025.3568044) — 2025, 6 cit., _Multimodal & Vision_ — _filtered: fraud_
 - [Opposition-Based White Shark Optimizer for Optimizing Modified EfficientNetV2 in Road Crack Classification](https://doi.org/10.1109/ojcs.2025.3569208) — 2025, 6 cit., _Learning Theory & Optimization_
 - [A Physics-Guided Bayesian Neural Network for Sensor Fault Detection in Wind Turbines](https://doi.org/10.1109/ojcs.2025.3577588) — 2025, 6 cit., _Networks, Cloud & Edge_ ●
 - [BOL-LPP: A Bayesian-Optimized LSTM Model for Day-Ahead Load Price Forecasting in the ERCOT Market](https://doi.org/10.1109/ojcs.2025.3580107) — 2025, 6 cit., _Fraud & Financial Analytics_ ●
 - [Neurological Disorder Recognition via Comprehensive Feature Fusion by Integrating Deep Learning and Texture Analysis](https://doi.org/10.1109/ojcs.2025.3594701) — 2025, 6 cit., _Health & Biomedical AI_
-- [A Detailed Comparative Analysis of Automatic Neural Metrics for Machine Translation: BLEURT &amp; BERTScore](https://doi.org/10.1109/ojcs.2025.3560333) — 2025, 6 cit., _Applied ML & Forecasting_
+- [A Detailed Comparative Analysis of Automatic Neural Metrics for Machine Translation: BLEURT & BERTScore](https://doi.org/10.1109/ojcs.2025.3560333) — 2025, 6 cit., _Applied ML & Forecasting_
 - [Comparative Analysis of Traditional and Modern NLP Techniques on the CoLA Dataset: From POS Tagging to Large Language Models](https://doi.org/10.1109/ojcs.2025.3526712) — 2025, 5 cit., _Agentic AI & LLM Systems_
-- [DSEM-NIDS: Enhanced Network Intrusion Detection System Using Deep Stacking Ensemble Model](https://doi.org/10.1109/ojcs.2025.3581036) — 2025, 5 cit., _Security & Threat Detection_
+- [DSEM-NIDS: Enhanced Network Intrusion Detection System Using Deep Stacking Ensemble Model](https://doi.org/10.1109/ojcs.2025.3581036) — 2025, 5 cit., _Security & Threat Detection_ — _filtered: security_
 - [Enhancing Pneumonia Diagnosis Through AI Interpretability: Comparative Analysis of Pixel-Level Interpretability and Grad-CAM on X-ray Imaging With VGG19](https://doi.org/10.1109/ojcs.2025.3582726) — 2025, 5 cit., _Health & Biomedical AI_
-- [FedWGCA: A Federated Learning Based AAV Intrusion Detection With Gradient Clipping and Attention-Based Neural Networks](https://doi.org/10.1109/ojcs.2025.3616394) — 2025, 5 cit., _Privacy & Federated Learning_
+- [FedWGCA: A Federated Learning Based AAV Intrusion Detection With Gradient Clipping and Attention-Based Neural Networks](https://doi.org/10.1109/ojcs.2025.3616394) — 2025, 5 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [Lead-Aware Multi-Resolution Transformer With Domain Adaptation for Beat-Level ECG Arrhythmia Classification](https://doi.org/10.1109/ojcs.2025.3637851) — 2025, 5 cit., _Health & Biomedical AI_
-- [A User-Centric IoT Platform for Privacy With AI-Assisted Consent](https://doi.org/10.1109/ojcs.2025.3629420) — 2025, 5 cit., _Networks, Cloud & Edge_
+- [A User-Centric IoT Platform for Privacy With AI-Assisted Consent](https://doi.org/10.1109/ojcs.2025.3629420) — 2025, 5 cit., _Networks, Cloud & Edge_ — _filtered: privacy_
 - [SwinSegFormer: Advancing Aerial Image Semantic Segmentation for Flood Detection](https://doi.org/10.1109/ojcs.2025.3565185) — 2025, 5 cit., _Multimodal & Vision_
 - [Quantum Computing-Accelerated Kalman Filtering for Satellite Clusters: Algorithms and Comparative Analysis](https://doi.org/10.1109/ojcs.2025.3535081) — 2025, 4 cit., _Learning Theory & Optimization_
 - [Bilingual Bangla OCR for Rural Empowerment: Detecting Handwritten Queries and Agricultural Assistance](https://doi.org/10.1109/ojcs.2025.3573317) — 2025, 4 cit., _Multimodal & Vision_
@@ -74,7 +83,7 @@
 - [DRL-Adapt: Deep Reinforcement Learning for Adaptive Routing Convergence Optimization in Large-Scale Networks](https://doi.org/10.1109/ojcs.2026.3687441) — 2026, 4 cit., _Networks, Cloud & Edge_ ●
 - [Hybrid POF-VLC Systems: Recent Advances, Challenges, Opportunities, and Future Directions](https://doi.org/10.1109/ojcs.2025.3535663) — 2025, 4 cit., _Networks, Cloud & Edge_
 - [Optimized Multi-Modal Conformer-Based Framework for Continuous Sign Language Recognition](https://doi.org/10.1109/ojcs.2025.3564828) — 2025, 4 cit., _Multimodal & Vision_
-- [SSL-XIoMT: Secure, Scalable, and Lightweight Cross-Domain IoMT Sharing With SSI and ZKP Authentication](https://doi.org/10.1109/ojcs.2025.3570087) — 2025, 4 cit., _Security & Threat Detection_
+- [SSL-XIoMT: Secure, Scalable, and Lightweight Cross-Domain IoMT Sharing With SSI and ZKP Authentication](https://doi.org/10.1109/ojcs.2025.3570087) — 2025, 4 cit., _Security & Threat Detection_ — _filtered: security_
 - [Correlation-Based Knowledge Distillation in Exemplar-Free Class-Incremental Learning](https://doi.org/10.1109/ojcs.2025.3546754) — 2025, 3 cit., _Learning Theory & Optimization_
 - [DiffCoR: Exposing AI-Generated Image by Using Stable Diffusion Model Based on Consistent Representation Learning](https://doi.org/10.1109/ojcs.2025.3575507) — 2025, 3 cit., _Multimodal & Vision_
 - [ABMF-Net: An Attentive Bayesian Multi-Stage Deep Learning Model for Robust Forecasting of Electricity Price and Demand](https://doi.org/10.1109/ojcs.2025.3579522) — 2025, 3 cit., _Learning Theory & Optimization_
@@ -85,17 +94,17 @@
 - [DHT-Backed Ancestor-Assisted Merkle Verification for Scalable and Real-Time Log Integrity in Cloud Data Lakes](https://doi.org/10.1109/ojcs.2026.3663463) — 2026, 3 cit., _Software Engineering & AIOps_
 - [LLM-Driven Adaptive Cloud Resource Scheduling: Bridging Reasoning Intelligence With Optimization Guarantees](https://doi.org/10.1109/ojcs.2026.3667549) — 2026, 3 cit., _Agentic AI & LLM Systems_ ●
 - [Innovative Evaluation Framework for Consumer Electronics-Enabled Intelligent Transportation Systems: Leveraging $q$-Rung Picture Fuzzy Hypersoft Schweizer-Sklar Aggregation Operators](https://doi.org/10.1109/ojcs.2025.3571815) — 2025, 3 cit., _Learning Theory & Optimization_
-- [Membership Inference Attacks and Differential Privacy: A Study Within the Context of Generative Models](https://doi.org/10.1109/ojcs.2025.3572244) — 2025, 3 cit., _Privacy & Federated Learning_
+- [Membership Inference Attacks and Differential Privacy: A Study Within the Context of Generative Models](https://doi.org/10.1109/ojcs.2025.3572244) — 2025, 3 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [Evaluation of Computationally Efficient Identity-Based Proxy Signatures](https://doi.org/10.1109/ojcs.2025.3573638) — 2025, 3 cit., _Security & Threat Detection_
 - [Explainable AI for Lightweight Network Traffic Classification Using Depthwise Separable Convolutions](https://doi.org/10.1109/ojcs.2025.3576495) — 2025, 3 cit., _Networks, Cloud & Edge_
-- [LightPUF-IIoT: A Lightweight PUF-Based Authentication Scheme With Real-Time Detection of Rogue Devices in Fog-Assisted IIoT Data Sharing](https://doi.org/10.1109/ojcs.2025.3607984) — 2025, 3 cit., _Security & Threat Detection_
+- [LightPUF-IIoT: A Lightweight PUF-Based Authentication Scheme With Real-Time Detection of Rogue Devices in Fog-Assisted IIoT Data Sharing](https://doi.org/10.1109/ojcs.2025.3607984) — 2025, 3 cit., _Security & Threat Detection_ — _filtered: security_
 - [Optimizing Energy Efficiency in UPA-Assisted SWIPT Massive MIMO Systems Over Rician Fading Channels](https://doi.org/10.1109/ojcs.2025.3525519) — 2025, 3 cit., _Networks, Cloud & Edge_
 - [VoiceTalk: A No-Code Approach for Creating Voice-Controlled Smart Home Applications](https://doi.org/10.1109/ojcs.2025.3576725) — 2025, 3 cit., _Networks, Cloud & Edge_
 - [Reconfigurable Production Lines for Industrial 5.0 Automation: An Intent-Based Approach](https://doi.org/10.1109/ojcs.2025.3599219) — 2025, 3 cit., _Networks, Cloud & Edge_
 - [What Time Is It? Finding Which Temporal Features is More Useful for Next Activity Prediction](https://doi.org/10.1109/ojcs.2024.3519815) — 2025, 2 cit., _Multimodal & Vision_
 - [FiLM-SimVP: Scalable Uncertainty Quantification in Spatiotemporal Forecasting](https://doi.org/10.1109/ojcs.2025.3616224) — 2025, 2 cit., _Applied ML & Forecasting_
 - [UVtrack: Multi-Modal Indoor Seamless Localization Using Ultra-Wideband Communication and Vision Sensors](https://doi.org/10.1109/ojcs.2025.3531442) — 2025, 2 cit., _Multimodal & Vision_
-- [Graph Split Federated Learning for Distributed Large-Scale AIoT in Smart Cities](https://doi.org/10.1109/ojcs.2025.3583271) — 2025, 2 cit., _Privacy & Federated Learning_
+- [Graph Split Federated Learning for Distributed Large-Scale AIoT in Smart Cities](https://doi.org/10.1109/ojcs.2025.3583271) — 2025, 2 cit., _Privacy & Federated Learning_ — _filtered: privacy_
 - [DCT-Based Channel Attention for Multivariate Time Series Classification](https://doi.org/10.1109/ojcs.2025.3586682) — 2025, 2 cit., _Networks, Cloud & Edge_
 - [Dynamic Spectrum Coexistence of NR-V2X and Wi-Fi 6E Using Deep Reinforcement Learning](https://doi.org/10.1109/ojcs.2025.3586664) — 2025, 2 cit., _Networks, Cloud & Edge_
 - [Deep TPS-PSO: Hybrid Deep Feature Extraction and Global Optimization for Precise 3D MRI Registration](https://doi.org/10.1109/ojcs.2025.3586956) — 2025, 2 cit., _Learning Theory & Optimization_
@@ -105,7 +114,7 @@
 - [CustXaiNet: A Multi-Modal Deep Learning Framework for Predicting Customer Behavior With Explainable AI](https://doi.org/10.1109/ojcs.2025.3619983) — 2025, 2 cit., _Multimodal & Vision_
 - [Model-Based Calculation Method of Mining Fairness in Blockchain](https://doi.org/10.1109/ojcs.2025.3644694) — 2025, 2 cit., _Applied ML & Forecasting_
 - [A Multimodal Perceived Stress Classification Framework Using Wearable Physiological Sensors](https://doi.org/10.1109/ojcs.2025.3647369) — 2025, 2 cit., _Multimodal & Vision_
-- [A Hybrid Deep Learning and Quantum Optimization Framework for Ransomware Response in Healthcare](https://doi.org/10.1109/ojcs.2025.3648741) — 2025, 2 cit., _Security & Threat Detection_
+- [A Hybrid Deep Learning and Quantum Optimization Framework for Ransomware Response in Healthcare](https://doi.org/10.1109/ojcs.2025.3648741) — 2025, 2 cit., _Security & Threat Detection_ — _filtered: security_
 - [CryptoMamba-SSM: Linear Complexity State Space Models for Cryptocurrency Volatility Prediction](https://doi.org/10.1109/ojcs.2026.3651226) — 2026, 2 cit., _Fraud & Financial Analytics_ ●
 - [Integrating AI and Large Language Models for Automated Data Quality Enhancement in Data Integration Systems](https://doi.org/10.1109/ojcs.2026.3666345) — 2026, 2 cit., _Software Engineering & AIOps_ ●
 - [Robust Joint Active and Passive Beamforming for Reconfigurable Intelligent Surface Assisted Full-Duplex Transmissions Under Imperfect Channels](https://doi.org/10.1109/ojcs.2025.3556710) — 2025, 2 cit., _Learning Theory & Optimization_
@@ -116,34 +125,34 @@
 - [Kolmogorov-Arnold Vision Transformer for Image Reconstruction in Lung Electrical Impedance Tomography](https://doi.org/10.1109/ojcs.2025.3559390) — 2025, 2 cit., _Multimodal & Vision_
 - [Squeeze-Excitation Transformer With Residual Bi-GRU Model for Distributed UWB Based Continuous Gesture Recognition and its Application to Human-UAV Interactions](https://doi.org/10.1109/ojcs.2025.3584205) — 2025, 2 cit., _Networks, Cloud & Edge_
 - [Reference-Free 3D WiFi AP Localization by Outdoor-to-Indoor Bridging](https://doi.org/10.1109/ojcs.2025.3566774) — 2025, 1 cit., _Networks, Cloud & Edge_
-- [A New Cryptographic Frontier: Key-Independent Security and Post-Quantum Hardness Assumptions](https://doi.org/10.1109/ojcs.2025.3592218) — 2025, 1 cit., _Learning Theory & Optimization_
+- [A New Cryptographic Frontier: Key-Independent Security and Post-Quantum Hardness Assumptions](https://doi.org/10.1109/ojcs.2025.3592218) — 2025, 1 cit., _Learning Theory & Optimization_ — _filtered: security_
 - [Two-Stage Hybrid Deep Learning Architecture for Cross-Domain Anomaly Detection and Failure Prediction](https://doi.org/10.1109/ojcs.2025.3643329) — 2025, 1 cit., _Health & Biomedical AI_
 - [Minimizing the Carbon Footprint in LoRa-Based IoT Networks: A Machine Learning Perspective on Gateway Positioning](https://doi.org/10.1109/ojcs.2025.3559331) — 2025, 1 cit., _Networks, Cloud & Edge_
 - [Radio Frequency Sensing–Based Human Emotion Identification by Leveraging 2D Transformation Techniques and Deep Learning Models](https://doi.org/10.1109/ojcs.2025.3580570) — 2025, 1 cit., _Networks, Cloud & Edge_
 - [Examining the Impact of Distance-Based Similarity Metrics on the Performance of Projected Clustering Algorithm for Fingerprint Database Clustering](https://doi.org/10.1109/ojcs.2025.3591192) — 2025, 1 cit., _Applied ML & Forecasting_
 - [Survey and Evaluation of Converging Architecture in LLMs Based on Footsteps of Operations](https://doi.org/10.1109/ojcs.2025.3587005) — 2025, 1 cit., _Applied ML & Forecasting_
 - [Extractive Text Summarization Using Formality of Language](https://doi.org/10.1109/ojcs.2025.3600632) — 2025, 1 cit., _Applied ML & Forecasting_
-- [Gaussian Kernel-Based LSH for High-Dimensional Similarity Search](https://doi.org/10.1109/ojcs.2025.3602355) — 2025, 1 cit., _Learning Theory & Optimization_
-- [LaplaceSalesNet: A Neural Laplace-Transformer Framework for Continuous-Time Sales Forecasting](https://doi.org/10.1109/ojcs.2025.3617489) — 2025, 1 cit., _Fraud & Financial Analytics_
+- [Gaussian Kernel-Based LSH for High-Dimensional Similarity Search](https://doi.org/10.1109/ojcs.2025.3602355) — 2025, 1 cit., _Learning Theory & Optimization_ ●
+- [LaplaceSalesNet: A Neural Laplace-Transformer Framework for Continuous-Time Sales Forecasting](https://doi.org/10.1109/ojcs.2025.3617489) — 2025, 1 cit., _Fraud & Financial Analytics_ ●
 - [FVM: A Formal Verification Methodology for VHDL Designs](https://doi.org/10.1109/ojcs.2025.3625468) — 2025, 1 cit., _Networks, Cloud & Edge_
 - [HybridTabNet-QC: A Transformer-Based Clinical Feature Fusion Framework for Heart Disease Risk Prediction](https://doi.org/10.1109/ojcs.2025.3637308) — 2025, 1 cit., _Health & Biomedical AI_
 - [Residual Reinforcement Learning Enhanced With Unsuccessful Episode Buffer](https://doi.org/10.1109/ojcs.2025.3637504) — 2025, 1 cit., _Security & Threat Detection_
-- [Dual-Encoder Adversarial Learning for Cloud-Based Cyber Intrusion Detection](https://doi.org/10.1109/ojcs.2025.3637858) — 2025, 1 cit., _Security & Threat Detection_
-- [IFDNet: A Contextually Modulated Deep Network for Robust Image Forgery Detection](https://doi.org/10.1109/ojcs.2025.3641988) — 2025, 1 cit., _Multimodal & Vision_
+- [Dual-Encoder Adversarial Learning for Cloud-Based Cyber Intrusion Detection](https://doi.org/10.1109/ojcs.2025.3637858) — 2025, 1 cit., _Security & Threat Detection_ — _filtered: security_
+- [IFDNet: A Contextually Modulated Deep Network for Robust Image Forgery Detection](https://doi.org/10.1109/ojcs.2025.3641988) — 2025, 1 cit., _Multimodal & Vision_ — _filtered: fraud_
 - [Epsilon-Guided Spatiotemporal Transformer: An Exponential Error Reduction for Multi-Memory Multilingual Sign Interpreter](https://doi.org/10.1109/ojcs.2025.3629116) — 2025, 1 cit., _Applied ML & Forecasting_
 - [Performance Enhancement Using a Dynamic Scoring-Based Task Scheduling Algorithm for Heterogeneous Multicore Systems](https://doi.org/10.1109/ojcs.2025.3648227) — 2025, 1 cit., _Networks, Cloud & Edge_
-- [Analysis of Transferable Adversarial Evasion Attack Detection in IoT and Industrial ADS](https://doi.org/10.1109/ojcs.2025.3649157) — 2025, 1 cit., _Security & Threat Detection_
-- [Towards Secure Air Traffic Surveillance: A Survey on ADS-B Threats, Existing Solutions, and Future Research](https://doi.org/10.1109/ojcs.2026.3651384) — 2026, 1 cit., _Security & Threat Detection_
-- [zk-REAL: A Zero-Knowledge-Based Protocol for Repeated Image Edit Authenticity Proof With Lattice Hashing](https://doi.org/10.1109/ojcs.2026.3661052) — 2026, 1 cit., _Privacy & Federated Learning_
+- [Analysis of Transferable Adversarial Evasion Attack Detection in IoT and Industrial ADS](https://doi.org/10.1109/ojcs.2025.3649157) — 2025, 1 cit., _Security & Threat Detection_ — _filtered: security_
+- [Towards Secure Air Traffic Surveillance: A Survey on ADS-B Threats, Existing Solutions, and Future Research](https://doi.org/10.1109/ojcs.2026.3651384) — 2026, 1 cit., _Security & Threat Detection_ — _filtered: security_
+- [zk-REAL: A Zero-Knowledge-Based Protocol for Repeated Image Edit Authenticity Proof With Lattice Hashing](https://doi.org/10.1109/ojcs.2026.3661052) — 2026, 1 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [A Vision-Based Framework for Safe Landing Zone Mapping of UAVs in Dynamic Environments](https://doi.org/10.1109/ojcs.2026.3663268) — 2026, 1 cit., _Networks, Cloud & Edge_
-- [MCP-Secure: A Runtime Access Control Layer for Privilege-Aware LLM Agent Tooling](https://doi.org/10.1109/ojcs.2026.3664314) — 2026, 1 cit., _Agentic AI & LLM Systems_
-- [Reinforcing CBDC Integrity: A Novel Anti Money Laundering Solution by Integrating Blockchain, Machine Learning, and Taint Analysis](https://doi.org/10.1109/ojcs.2026.3666199) — 2026, 1 cit., _Fraud & Financial Analytics_
+- [MCP-Secure: A Runtime Access Control Layer for Privilege-Aware LLM Agent Tooling](https://doi.org/10.1109/ojcs.2026.3664314) — 2026, 1 cit., _Agentic AI & LLM Systems_ — _filtered: security_
+- [Reinforcing CBDC Integrity: A Novel Anti Money Laundering Solution by Integrating Blockchain, Machine Learning, and Taint Analysis](https://doi.org/10.1109/ojcs.2026.3666199) — 2026, 1 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
 - [Cross-Attention Multi-Modal Transformer for Early Diagnosis of Parkinson's Disease](https://doi.org/10.1109/ojcs.2026.3675788) — 2026, 1 cit., _Health & Biomedical AI_
 - [Enhanced Adaptive Path Optimization for UAV Logistics Delivery in Post-Disaster Scenarios](https://doi.org/10.1109/ojcs.2026.3681911) — 2026, 1 cit., _Networks, Cloud & Edge_
 - [Applicability of Process Mining in Usability Tests: A Case Study for Identifying User Mental Models in Geospatial Search Engines](https://doi.org/10.1109/ojcs.2026.3682070) — 2026, 1 cit., _Software Engineering & AIOps_ ●
 - [Benchmarking Explainable AI Methods for Vision Transformer-Based Diabetic Retinopathy Analysis](https://doi.org/10.1109/ojcs.2026.3688710) — 2026, 1 cit., _Health & Biomedical AI_ ●
-- [Toward Sustainable Environmental Intelligence: A Comprehensive Survey of Federated Learning Applications and Technical Challenges](https://doi.org/10.1109/ojcs.2026.3690680) — 2026, 1 cit., _Privacy & Federated Learning_
-- [Governance-Aware AI Workflow Infrastructure for Secure and Policy-Compliant Healthcare Analytics](https://doi.org/10.1109/ojcs.2026.3718448) — 2026, 1 cit., _Health & Biomedical AI_
+- [Toward Sustainable Environmental Intelligence: A Comprehensive Survey of Federated Learning Applications and Technical Challenges](https://doi.org/10.1109/ojcs.2026.3690680) — 2026, 1 cit., _Privacy & Federated Learning_ — _filtered: privacy_
+- [Governance-Aware AI Workflow Infrastructure for Secure and Policy-Compliant Healthcare Analytics](https://doi.org/10.1109/ojcs.2026.3718448) — 2026, 1 cit., _Health & Biomedical AI_ — _filtered: governance, security_
 - [A B-Spline Function Based 3D Point Cloud Unwrapping Scheme for 3D Fingerprint Recognition and Identification](https://doi.org/10.1109/ojcs.2025.3559975) — 2025, 1 cit., _Networks, Cloud & Edge_
 - [Automatic Classifying of Requirements-Relevant Contents From App Reviews in the Arabic Language](https://doi.org/10.1109/ojcs.2025.3573499) — 2025, 1 cit., _Applied ML & Forecasting_
 - [Conv-Ensemble for Solar Power Prediction With First Nations Seasonal Information](https://doi.org/10.1109/ojcs.2025.3580339) — 2025, 1 cit., _Learning Theory & Optimization_
@@ -151,23 +160,23 @@
 - [HD-CB: The First Exploration of Hyperdimensional Computing for Contextual Bandits Problems](https://doi.org/10.1109/ojcs.2025.3642108) — 2025, 1 cit., _Networks, Cloud & Edge_
 - [Human-in-the-Loop Feature Selection Using Interpretable Kolmogorov-Arnold Network-Based Double Deep Q-Network](https://doi.org/10.1109/ojcs.2026.3652986) — 2026, 0 cit., _Networks, Cloud & Edge_ ●
 - [New Incoming EIC Editorial](https://doi.org/10.1109/ojcs.2025.3525947) — 2025, 0 cit., _Applied ML & Forecasting_
-- [2024 List of Reviewers<sup>*</sup>](https://doi.org/10.1109/ojcs.2025.3527836) — 2025, 0 cit., _Applied ML & Forecasting_
+- [2024 List of Reviewers*](https://doi.org/10.1109/ojcs.2025.3527836) — 2025, 0 cit., _Applied ML & Forecasting_
 - [Nonparametric Bootstrap Likelihood Estimation to Investigate the Chance Set-Up on Clustering Results](https://doi.org/10.1109/ojcs.2025.3545261) — 2025, 0 cit., _Applied ML & Forecasting_
-- [Sybil-Resilient Publisher Selection Mechanism in Blockchain-Based MCS Systems](https://doi.org/10.1109/ojcs.2025.3565620) — 2025, 0 cit., _Applied ML & Forecasting_
+- [Sybil-Resilient Publisher Selection Mechanism in Blockchain-Based MCS Systems](https://doi.org/10.1109/ojcs.2025.3565620) — 2025, 0 cit., _Applied ML & Forecasting_ — _filtered: fraud_
 - [Comparison of Deep Learning Techniques for RF-Based Human Posture Detection Systems](https://doi.org/10.1109/ojcs.2025.3571587) — 2025, 0 cit., _Applied ML & Forecasting_
 - [Fast and Private 1-to-$N$ Face Identification Protocols](https://doi.org/10.1109/ojcs.2025.3580739) — 2025, 0 cit., _Networks, Cloud & Edge_
 - [Deep Temporal and Structural Embeddings for Robust Unsupervised Anomaly Detection in Dynamic Graphs](https://doi.org/10.1109/ojcs.2025.3584942) — 2025, 0 cit., _Networks, Cloud & Edge_
-- [A Robust Cross-Channel Image Watermarking Technique for Tamper Detection and its Precise Localization](https://doi.org/10.1109/ojcs.2025.3589948) — 2025, 0 cit., _Multimodal & Vision_
+- [A Robust Cross-Channel Image Watermarking Technique for Tamper Detection and its Precise Localization](https://doi.org/10.1109/ojcs.2025.3589948) — 2025, 0 cit., _Multimodal & Vision_ — _filtered: security_
 - [Simulators for Processors Used in Virtualization: A Survey](https://doi.org/10.1109/ojcs.2025.3591359) — 2025, 0 cit., _Networks, Cloud & Edge_
 - [A Probabilistic Method for Hierarchical Multisubject Classification of Documents Based on Multilingual Subject Term Vocabularies](https://doi.org/10.1109/ojcs.2025.3592254) — 2025, 0 cit., _Applied ML & Forecasting_
-- [Towards seL4 for Enhanced System Isolation and Security on Embedded Devices](https://doi.org/10.1109/ojcs.2025.3592377) — 2025, 0 cit., _Applied ML & Forecasting_
-- [A Robust Image Encryption Protocol for Secure Data Sharing in Brain Computer Interface Applications](https://doi.org/10.1109/ojcs.2025.3587014) — 2025, 0 cit., _Multimodal & Vision_
+- [Towards seL4 for Enhanced System Isolation and Security on Embedded Devices](https://doi.org/10.1109/ojcs.2025.3592377) — 2025, 0 cit., _Applied ML & Forecasting_ — _filtered: security_
+- [A Robust Image Encryption Protocol for Secure Data Sharing in Brain Computer Interface Applications](https://doi.org/10.1109/ojcs.2025.3587014) — 2025, 0 cit., _Multimodal & Vision_ — _filtered: security_
 - [Using Extreme Order Statistics of Multimodal Mixture Distributions for Complexity Analysis of Semi-Steady-State Jaya Algorithm](https://doi.org/10.1109/ojcs.2025.3599786) — 2025, 0 cit., _Multimodal & Vision_
 - [Multivariate Constrained Elastic Matching With Application in Real-Time Energy Disaggregation](https://doi.org/10.1109/ojcs.2025.3609195) — 2025, 0 cit., _Applied ML & Forecasting_
 - [An Empirical Study on the Classification of Bug Reports With Machine Learning](https://doi.org/10.1109/ojcs.2026.3692087) — 2026, 0 cit., _Software Engineering & AIOps_ ●
 - [Synthetic Data for Fairness: Bias Mitigation in Facial Attribute Recognition](https://doi.org/10.1109/ojcs.2025.3622694) — 2025, 0 cit., _Applied ML & Forecasting_
 - [The Chance Set-Up on Pattern Discovery](https://doi.org/10.1109/ojcs.2025.3623301) — 2025, 0 cit., _Applied ML & Forecasting_
-- [CEFEEL: <u>C</u> ommunication- <u>E</u> fficient <u>FE</u> derated <u>L</u> earning for Personal Assistant Applications](https://doi.org/10.1109/ojcs.2025.3624806) — 2025, 0 cit., _Networks, Cloud & Edge_
+- [CEFEEL: C ommunication- E fficient FE derated L earning for Personal Assistant Applications](https://doi.org/10.1109/ojcs.2025.3624806) — 2025, 0 cit., _Networks, Cloud & Edge_
 - [UniBizNet: A Unified Business Intelligence Network for Strategic Multimodal Data Integration and Predictive Analysis](https://doi.org/10.1109/ojcs.2025.3626308) — 2025, 0 cit., _Software Engineering & AIOps_
 - [Leveraging AdamW Golden Search Optimized Multi-Level Attention Stacked Feature Generators for Cephalometric Landmark Prediction](https://doi.org/10.1109/ojcs.2025.3626958) — 2025, 0 cit., _Learning Theory & Optimization_
 - [A Dual-Encoder Approach to Bankruptcy Prediction With Financial Ratios and Corporate Disclosures](https://doi.org/10.1109/ojcs.2025.3629748) — 2025, 0 cit., _Applied ML & Forecasting_
@@ -176,20 +185,20 @@
 - [Stack Transformer-Based Spatial-Temporal Attention Model for Dynamic Sign Language and Fingerspelling Recognition](https://doi.org/10.1109/ojcs.2026.3682330) — 2026, 0 cit., _Applied ML & Forecasting_
 - [A Validation Strategy for Deep Learning Models: Evaluating and Enhancing Robustness](https://doi.org/10.1109/ojcs.2025.3650722) — 2026, 0 cit., _Security & Threat Detection_
 - [A Transformer-Based Intelligent System for Hierarchical Occupational Classification in the Labor Market](https://doi.org/10.1109/ojcs.2025.3634026) — 2025, 0 cit., _Applied ML & Forecasting_
-- [Adversarial Attacks on Person Image Synthesis: Leveraging Pose and Appearance Controls in Denoising Diffusion Models](https://doi.org/10.1109/ojcs.2025.3637052) — 2025, 0 cit., _Security & Threat Detection_
-- [SDN-MG25: A Comprehensive Dataset for Cybersecurity Analysis in Software Defined Networking-Enabled Microgrid Systems](https://doi.org/10.1109/ojcs.2025.3639408) — 2025, 0 cit., _Security & Threat Detection_
-- [H2-Cache: A Novel Hierarchical Dual-Stage Cache for High-Performance Acceleration of Generative Diffusion Models](https://doi.org/10.1109/ojcs.2025.3639606) — 2025, 0 cit., _Multimodal & Vision_
+- [Adversarial Attacks on Person Image Synthesis: Leveraging Pose and Appearance Controls in Denoising Diffusion Models](https://doi.org/10.1109/ojcs.2025.3637052) — 2025, 0 cit., _Security & Threat Detection_ — _filtered: security_
+- [SDN-MG25: A Comprehensive Dataset for Cybersecurity Analysis in Software Defined Networking-Enabled Microgrid Systems](https://doi.org/10.1109/ojcs.2025.3639408) — 2025, 0 cit., _Security & Threat Detection_ — _filtered: security_
+- [H2-Cache: A Novel Hierarchical Dual-Stage Cache for High-Performance Acceleration of Generative Diffusion Models](https://doi.org/10.1109/ojcs.2025.3639606) — 2025, 0 cit., _Multimodal & Vision_ ●
 - [SemCom-OPTIMA: Empirically-Driven Optimization of Semantic Image Transmission Across Heterogeneous Edge–Cloud Systems](https://doi.org/10.1109/ojcs.2025.3642047) — 2025, 0 cit., _Multimodal & Vision_
-- [Designing for the Unlikely: Mitigation Against Rare, High-Impact Threats](https://doi.org/10.1109/ojcs.2025.3643738) — 2025, 0 cit., _Security & Threat Detection_
+- [Designing for the Unlikely: Mitigation Against Rare, High-Impact Threats](https://doi.org/10.1109/ojcs.2025.3643738) — 2025, 0 cit., _Security & Threat Detection_ — _filtered: security_
 - [IEEE Open Journal of the Computer Society Information for Authors](https://doi.org/10.1109/ojcs.2025.3527169) — 2025, 0 cit., _Multimodal & Vision_
 - [IEEE Open Journal of the Computer Society Publication Information](https://doi.org/10.1109/ojcs.2025.3527165) — 2025, 0 cit., _Multimodal & Vision_
-- [An Efficient and Scalable Montgomery Modular Multiplier for Cryptographic Applications](https://doi.org/10.1109/ojcs.2025.3628878) — 2025, 0 cit., _Applied ML & Forecasting_
+- [An Efficient and Scalable Montgomery Modular Multiplier for Cryptographic Applications](https://doi.org/10.1109/ojcs.2025.3628878) — 2025, 0 cit., _Applied ML & Forecasting_ — _filtered: security_
 - [On the Fuzzy Entropy and the Rankability of Data](https://doi.org/10.1109/ojcs.2025.3642119) — 2025, 0 cit., _Software Engineering & AIOps_
 - [Texture Dataset Generator With Repeatable Patterns From a Single Sample Applied to Historical Tiles From Belém, Pará, Brazil](https://doi.org/10.1109/ojcs.2025.3646992) — 2025, 0 cit., _Multimodal & Vision_
-- [METS: Metadata-Embedded Steganography for Digital Rights Tracking in LLM-Generated Text](https://doi.org/10.1109/ojcs.2025.3649704) — 2025, 0 cit., _Agentic AI & LLM Systems_
+- [METS: Metadata-Embedded Steganography for Digital Rights Tracking in LLM-Generated Text](https://doi.org/10.1109/ojcs.2025.3649704) — 2025, 0 cit., _Agentic AI & LLM Systems_ — _filtered: governance, security_
 - [Spatial–Temporal Transformers With Stochastic Time-Warping and Joint-Wise Encoding for Rehabilitation Exercise Assessment](https://doi.org/10.1109/ojcs.2025.3650355) — 2026, 0 cit., _Health & Biomedical AI_
 - [A Multi-Task Neural Framework for Unified Alert Processing and Incident Prediction in Enterprise IT Systems](https://doi.org/10.1109/ojcs.2026.3651756) — 2026, 0 cit., _Software Engineering & AIOps_ ●
-- [Image Copyright Protection: A Comprehensive Survey of Digital Watermarking, Deep Learning, and Blockchain Approaches](https://doi.org/10.1109/ojcs.2026.3651292) — 2026, 0 cit., _Multimodal & Vision_
+- [Image Copyright Protection: A Comprehensive Survey of Digital Watermarking, Deep Learning, and Blockchain Approaches](https://doi.org/10.1109/ojcs.2026.3651292) — 2026, 0 cit., _Multimodal & Vision_ — _filtered: security_
 - [EMO-CARE: EEG Multi-Scale Temporal Modeling With Channel-Aware Feature Attention for Robust Subject-Independent Emotion Recognition](https://doi.org/10.1109/ojcs.2026.3653766) — 2026, 0 cit., _Health & Biomedical AI_
 - [A Validation Strategy for Deep Learning Models: Evaluating and Enhancing Robustness](https://doi.org/10.1109/ojcs.2025.3650722) — 2026, 0 cit., _Security & Threat Detection_
 - [MM-3DAttNet: Multi-Modal 3D Attention Network for MGMT Methylation Prediction](https://doi.org/10.1109/ojcs.2026.3654173) — 2026, 0 cit., _Multimodal & Vision_
@@ -198,34 +207,34 @@
 - [ECommVis: Supporting E-Commerce Marketplace Advertising Outcomes Through a Visual Analytics System](https://doi.org/10.1109/ojcs.2026.3660917) — 2026, 0 cit., _Multimodal & Vision_ ●
 - [Scalability and Sustainability of Linear WSNs Using Erasure Coding-Based TDMA Scheduling](https://doi.org/10.1109/ojcs.2026.3661540) — 2026, 0 cit., _Networks, Cloud & Edge_
 - [Risk Model for Choosing Signature Thresholds for Software Updates](https://doi.org/10.1109/ojcs.2026.3663493) — 2026, 0 cit., _Software Engineering & AIOps_
-- [Toward Realistic and Efficient Cyber Deception](https://doi.org/10.1109/ojcs.2026.3669021) — 2026, 0 cit., _Security & Threat Detection_
+- [Toward Realistic and Efficient Cyber Deception](https://doi.org/10.1109/ojcs.2026.3669021) — 2026, 0 cit., _Security & Threat Detection_ — _filtered: security_
 - [STGAN-Q-Mix: Coordinated Spatiotemporal Learning for Polyglot Sign Language Interpretation](https://doi.org/10.1109/ojcs.2026.3675778) — 2026, 0 cit., _Applied ML & Forecasting_
 - [Data-Driven Prediction of Maternal Health Risk Level Using Machine Learning Algorithms](https://doi.org/10.1109/ojcs.2026.3676081) — 2026, 0 cit., _Health & Biomedical AI_
 - [Multi-Label Incremental Learning for State Prediction of Actuator Devices in Smart Homes](https://doi.org/10.1109/ojcs.2026.3675959) — 2026, 0 cit., _Networks, Cloud & Edge_
-- [A Framework for Predictive Similarity Queries Over Heterogeneous Metric Spaces](https://doi.org/10.1109/ojcs.2026.3676153) — 2026, 0 cit., _Applied ML & Forecasting_
-- [Phygital Twin IoT: A Hardware-Software Decomposition Architecture for Scalable and Secure Digital Twin IoT Systems](https://doi.org/10.1109/ojcs.2026.3681725) — 2026, 0 cit., _Networks, Cloud & Edge_
+- [A Framework for Predictive Similarity Queries Over Heterogeneous Metric Spaces](https://doi.org/10.1109/ojcs.2026.3676153) — 2026, 0 cit., _Applied ML & Forecasting_ ●
+- [Phygital Twin IoT: A Hardware-Software Decomposition Architecture for Scalable and Secure Digital Twin IoT Systems](https://doi.org/10.1109/ojcs.2026.3681725) — 2026, 0 cit., _Networks, Cloud & Edge_ — _filtered: security_
 - [NA-STM Enhanced Energy-Efficient Custom Spiking U-Net Denoiser for Noise-Robust CIFAR-10 Classification](https://doi.org/10.1109/ojcs.2026.3681673) — 2026, 0 cit., _Learning Theory & Optimization_ ●
 - [Learning Reconstructive Embeddings in Reproducing Kernel Hilbert Spaces via the Representer Theorem](https://doi.org/10.1109/ojcs.2026.3682462) — 2026, 0 cit., _Learning Theory & Optimization_
 - [Smart Contract–Enabled P2P Energy Trading: A Formally Verified Game-Theoretic Framework](https://doi.org/10.1109/ojcs.2026.3681772) — 2026, 0 cit., _Applied ML & Forecasting_
-- [Multi-Layer Subspace Knowledge Transfer Framework for Open-Set Recognition](https://doi.org/10.1109/ojcs.2026.3683032) — 2026, 0 cit., _Learning Theory & Optimization_ ●
-- [Effective, Explainable, and Trustworthy Client Selection in Federated Learning](https://doi.org/10.1109/ojcs.2026.3683012) — 2026, 0 cit., _Privacy & Federated Learning_
+- [Multi-Layer Subspace Knowledge Transfer Framework for Open-Set Recognition](https://doi.org/10.1109/ojcs.2026.3683032) — 2026, 0 cit., _Learning Theory & Optimization_
+- [Effective, Explainable, and Trustworthy Client Selection in Federated Learning](https://doi.org/10.1109/ojcs.2026.3683012) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy_
 - [Transformer Based Aspect-Level Sentiment and Emotion Analysis for Mining Consumer Perceptions on Cleaning Products: A Hybrid HBM-SERVQUAL Approach](https://doi.org/10.1109/ojcs.2026.3684907) — 2026, 0 cit., _Applied ML & Forecasting_
-- [Cybersecurity Compliance for Operational Technology Using Large Language Models](https://doi.org/10.1109/ojcs.2026.3684079) — 2026, 0 cit., _Agentic AI & LLM Systems_
-- [Fine-Tuning Open-Source Large Language Models for Cybersecurity and IT Support: A Comparative Study on LLM Fine-Tuning Techniques](https://doi.org/10.1109/ojcs.2026.3685799) — 2026, 0 cit., _Agentic AI & LLM Systems_
-- [Exploring the Security Dimensions of Identity-Based Proxy Signature Schemes: A Comprehensive Review](https://doi.org/10.1109/ojcs.2026.3685803) — 2026, 0 cit., _Security & Threat Detection_
+- [Cybersecurity Compliance for Operational Technology Using Large Language Models](https://doi.org/10.1109/ojcs.2026.3684079) — 2026, 0 cit., _Agentic AI & LLM Systems_ — _filtered: governance, security_
+- [Fine-Tuning Open-Source Large Language Models for Cybersecurity and IT Support: A Comparative Study on LLM Fine-Tuning Techniques](https://doi.org/10.1109/ojcs.2026.3685799) — 2026, 0 cit., _Agentic AI & LLM Systems_ — _filtered: security_
+- [Exploring the Security Dimensions of Identity-Based Proxy Signature Schemes: A Comprehensive Review](https://doi.org/10.1109/ojcs.2026.3685803) — 2026, 0 cit., _Security & Threat Detection_ — _filtered: security_
 - [Bio-MutClassNet: A Context-Aware Hybrid Transformer Framework for Precision Oncology via Attention-Based Genetic Mutation Classification](https://doi.org/10.1109/ojcs.2026.3685532) — 2026, 0 cit., _Networks, Cloud & Edge_
-- [Include-Slim: Supporting Similarity Retrieval Variants With a Metric Access Method](https://doi.org/10.1109/ojcs.2026.3687006) — 2026, 0 cit., _Applied ML & Forecasting_
-- [Toward Privacy-Preserving Contracts in Web Applications](https://doi.org/10.1109/ojcs.2026.3688003) — 2026, 0 cit., _Privacy & Federated Learning_
-- [A Novel Ensemble Model for Optimizing Author Profiling](https://doi.org/10.1109/ojcs.2026.3687421) — 2026, 0 cit., _Learning Theory & Optimization_ ●
+- [Include-Slim: Supporting Similarity Retrieval Variants With a Metric Access Method](https://doi.org/10.1109/ojcs.2026.3687006) — 2026, 0 cit., _Applied ML & Forecasting_ ●
+- [Toward Privacy-Preserving Contracts in Web Applications](https://doi.org/10.1109/ojcs.2026.3688003) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy_
+- [A Novel Ensemble Model for Optimizing Author Profiling](https://doi.org/10.1109/ojcs.2026.3687421) — 2026, 0 cit., _Learning Theory & Optimization_
 - [A Unified Framework for Age-Invariant Face Recognition Using GANs and Vision Transformers](https://doi.org/10.1109/ojcs.2026.3688643) — 2026, 0 cit., _Multimodal & Vision_
 - [Boosting Brain Tumor Detection Accuracy in MRI Using Transfer Learning and Fine-Tuned DeepLabv3+](https://doi.org/10.1109/ojcs.2026.3688451) — 2026, 0 cit., _Health & Biomedical AI_
 - [Routed Expert-Based Emotion Detector for Multi-Label Emotion Classification](https://doi.org/10.1109/ojcs.2026.3688524) — 2026, 0 cit., _Applied ML & Forecasting_
-- [Hybrid Graph Neural Networks With Temporal Attention for Cost-Effective Fraud Detection in Financial Transaction Networks](https://doi.org/10.1109/ojcs.2026.3689312) — 2026, 0 cit., _Fraud & Financial Analytics_
+- [Hybrid Graph Neural Networks With Temporal Attention for Cost-Effective Fraud Detection in Financial Transaction Networks](https://doi.org/10.1109/ojcs.2026.3689312) — 2026, 0 cit., _Fraud & Financial Analytics_ — _filtered: fraud_
 - [Lightweight IDS Method for IoT Devices Traffic Monitoring Through Distilled Federated Knowledge on Decentralized Data](https://doi.org/10.1109/ojcs.2026.3683846) — 2026, 0 cit., _Privacy & Federated Learning_
-- [Generative AI for Ransomware Identification and Mitigation: Taxonomy, Challenges, and Future Directions](https://doi.org/10.1109/ojcs.2026.3690970) — 2026, 0 cit., _Agentic AI & LLM Systems_
+- [Generative AI for Ransomware Identification and Mitigation: Taxonomy, Challenges, and Future Directions](https://doi.org/10.1109/ojcs.2026.3690970) — 2026, 0 cit., _Agentic AI & LLM Systems_ — _filtered: security_
 - [Efficient Lightweight YOLO for Adenoid Detection and Segmentation in Cephalometric Radiographs](https://doi.org/10.1109/ojcs.2026.3683890) — 2026, 0 cit., _Multimodal & Vision_
 - [DeCLIP: Pareto-Efficient Collaborative Inference in Decentralized Physical Infrastructure Networks](https://doi.org/10.1109/ojcs.2026.3690486) — 2026, 0 cit., _Networks, Cloud & Edge_ ●
-- [S2D-FL: Sparsity-Guided and Trust-Aware Federated Learning for Joint Robustness and Privacy in IoT Edge Computing](https://doi.org/10.1109/ojcs.2026.3689594) — 2026, 0 cit., _Privacy & Federated Learning_
+- [S2D-FL: Sparsity-Guided and Trust-Aware Federated Learning for Joint Robustness and Privacy in IoT Edge Computing](https://doi.org/10.1109/ojcs.2026.3689594) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy_
 - [Underwater Image Enhancement based on Cascased Water-Net and Physical-Net Models](https://doi.org/10.1109/ojcs.2026.3690469) — 2026, 0 cit., _Multimodal & Vision_
 - [AARN3: A Software Defect Prediction Model Using Atomic Association Rule Networks Based on Three Distinct Minimum Support Thresholds](https://doi.org/10.1109/ojcs.2026.3691543) — 2026, 0 cit., _Software Engineering & AIOps_
 - [Hybrid RIS Phase-Shift Design via Rao-Enhanced Whale Optimization for SE Maximization in Downlink MISO HetNets](https://doi.org/10.1109/ojcs.2026.3692572) — 2026, 0 cit., _Networks, Cloud & Edge_
@@ -236,23 +245,23 @@
 - [LSCM-GAN: A GAN for Thermal Infrared Image Colorization Using Vmamba With Large Kernel and Spatial-Channel Attention](https://doi.org/10.1109/ojcs.2026.3694716) — 2026, 0 cit., _Multimodal & Vision_
 - [AI-Based Approaches for Drunk Driving Detection for Traffic Safety: In-Vehicle and Out-Vehicle Techniques, Challenges, and Future Directions](https://doi.org/10.1109/ojcs.2026.3694137) — 2026, 0 cit., _Networks, Cloud & Edge_
 - [Pruning Strategies of Vision Transformers: A Specialized Survey](https://doi.org/10.1109/ojcs.2026.3692927) — 2026, 0 cit., _Multimodal & Vision_
-- [AdRo-FL: Secure and Informed Client Selection for Federated Learning Under Adversarial Aggregator](https://doi.org/10.1109/ojcs.2026.3696080) — 2026, 0 cit., _Privacy & Federated Learning_
+- [AdRo-FL: Secure and Informed Client Selection for Federated Learning Under Adversarial Aggregator](https://doi.org/10.1109/ojcs.2026.3696080) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [Smart Parking for Medical Cities via Passenger-Aware Allocation and Fast Grouping–Permutation Heuristics](https://doi.org/10.1109/ojcs.2026.3693801) — 2026, 0 cit., _Health & Biomedical AI_
 - [Cascade Skip-Connection BiLSTM Autoencoder for CPR Artifact Removal Prior to AED Shock Advisory](https://doi.org/10.1109/ojcs.2026.3696482) — 2026, 0 cit., _Health & Biomedical AI_
-- [SINdex: <b>S</b> emantic <b>IN</b> consistency Index for Hallucination Detection in LLMs](https://doi.org/10.1109/ojcs.2026.3697236) — 2026, 0 cit., _Software Engineering & AIOps_
+- [SINdex: S emantic IN consistency Index for Hallucination Detection in LLMs](https://doi.org/10.1109/ojcs.2026.3697236) — 2026, 0 cit., _Software Engineering & AIOps_ ●
 - [Attention-Based Geo–Textual Fusion Network for Disaster Risk Prediction](https://doi.org/10.1109/ojcs.2026.3697754) — 2026, 0 cit., _Networks, Cloud & Edge_
 - [Beyond Polarity in Bengali Texts: Can Multi-Task Modeling Capture Sarcasm Intensity and Classification?](https://doi.org/10.1109/ojcs.2026.3697802) — 2026, 0 cit., _Applied ML & Forecasting_
 - [Idle Fragmentation-Aware Resource Scheduling for Hyperscale Energy-Efficient Cloud Data Centers](https://doi.org/10.1109/ojcs.2026.3699545) — 2026, 0 cit., _Networks, Cloud & Edge_ ●
-- [Federated Driver Digital Twin (FDDT): Secure, Adaptive, and Deployment-Oriented Private Models for Connected Vehicles](https://doi.org/10.1109/ojcs.2026.3701033) — 2026, 0 cit., _Privacy & Federated Learning_
-- [FedGB: A Generator-Based Federated Learning Against Reconstruction Attacks](https://doi.org/10.1109/ojcs.2026.3700901) — 2026, 0 cit., _Privacy & Federated Learning_
+- [Federated Driver Digital Twin (FDDT): Secure, Adaptive, and Deployment-Oriented Private Models for Connected Vehicles](https://doi.org/10.1109/ojcs.2026.3701033) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: security_
+- [FedGB: A Generator-Based Federated Learning Against Reconstruction Attacks](https://doi.org/10.1109/ojcs.2026.3700901) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [A Pruning Framework for Bias Mitigation in Large Language Models](https://doi.org/10.1109/ojcs.2026.3701986) — 2026, 0 cit., _Agentic AI & LLM Systems_
 - [An Emotion Aware Driving Assistant Using Multimodal Recognition and Regulation](https://doi.org/10.1109/ojcs.2026.3701945) — 2026, 0 cit., _Multimodal & Vision_ ●
 - [Attention-Driven Alaryngeal Speech Enhancement via Discrete Representation Learning and Timbre-Preserving Augmentation](https://doi.org/10.1109/ojcs.2026.3696985) — 2026, 0 cit., _Health & Biomedical AI_
 - [ENVOT: Attestation of IoT Swarms for Anomalies Using ENsemble Classifier and VOTing Mechanism](https://doi.org/10.1109/ojcs.2026.3703342) — 2026, 0 cit., _Networks, Cloud & Edge_
-- [A Novel Adaptive Generalization-Guided Federated Learning for Multimodal Industrial IoT Intrusion Detection under Statistical Heterogeneity](https://doi.org/10.1109/ojcs.2026.3703977) — 2026, 0 cit., _Privacy & Federated Learning_
+- [A Novel Adaptive Generalization-Guided Federated Learning for Multimodal Industrial IoT Intrusion Detection under Statistical Heterogeneity](https://doi.org/10.1109/ojcs.2026.3703977) — 2026, 0 cit., _Privacy & Federated Learning_ — _filtered: privacy, security_
 - [A Multimodal Self-Supervised Learning Framework for Scene Understanding in Autonomous Driving Systems](https://doi.org/10.1109/ojcs.2026.3707444) — 2026, 0 cit., _Multimodal & Vision_ ●
-- [Maximizing Unlabeled Data Utility with Improved Representation Learning and Pseudo Labeling](https://doi.org/10.1109/ojcs.2026.3712699) — 2026, 0 cit., _Learning Theory & Optimization_ ●
-- [A Survey on Adversarial Deep Learning in Computer Vision](https://doi.org/10.1109/ojcs.2026.3714544) — 2026, 0 cit., _Security & Threat Detection_
+- [Maximizing Unlabeled Data Utility with Improved Representation Learning and Pseudo Labeling](https://doi.org/10.1109/ojcs.2026.3712699) — 2026, 0 cit., _Learning Theory & Optimization_
+- [A Survey on Adversarial Deep Learning in Computer Vision](https://doi.org/10.1109/ojcs.2026.3714544) — 2026, 0 cit., _Security & Threat Detection_ — _filtered: security_
 - [DUGS-MT: A Competitive Dual-Stream Framework with Uncertainty-Gated Consensus for Semi-Supervised Radiographic Segmentation](https://doi.org/10.1109/ojcs.2026.3714673) — 2026, 0 cit., _Multimodal & Vision_
 - [6HRRT: 6TiSCH Scheduling for Supporting Highly-Reliable Real-Time Mobile IoT Applications](https://doi.org/10.1109/ojcs.2026.3718316) — 2026, 0 cit., _Networks, Cloud & Edge_
 - [Explainable Deep Semantic Graph Networks for Enhanced Business Decision-Making in E-Markets](https://doi.org/10.1109/ojcs.2026.3719423) — 2026, 0 cit., _Networks, Cloud & Edge_

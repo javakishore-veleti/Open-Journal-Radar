@@ -114,10 +114,14 @@ def main():
 
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from scan_db import connect, ingest
+    from topic_filter import partition, EXCLUSIONS
 
     print(f"fetching {a.issn} since {a.since} …")
     papers = fetch(a.issn, a.since, a.mailto)
     print(f"  {len(papers)} papers returned")
+    eligible, filtered = partition(papers)      # standing exclusions, tagged in place
+    print(f"  {len(eligible)} eligible, {len(filtered)} filtered "
+          f"({', '.join(sorted(EXCLUSIONS))})")
 
     os.makedirs(os.path.dirname(a.db) or ".", exist_ok=True)
     db = connect(a.db)
@@ -127,23 +131,32 @@ def main():
     os.makedirs(a.out, exist_ok=True)
     json.dump(papers, open(f"{a.out}/papers.json", "w"), indent=1)
     json.dump(new,    open(f"{a.out}/new-since-last-scan.json", "w"), indent=1)
+    json.dump([p for p in new if not p["excluded_by"]],
+              open(f"{a.out}/new-eligible.json", "w"), indent=1)
 
     now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
     by_cluster = {}
-    for p in papers: by_cluster[p["cluster"]] = by_cluster.get(p["cluster"], 0) + 1
+    for p in eligible: by_cluster[p["cluster"]] = by_cluster.get(p["cluster"], 0) + 1
 
     with open(f"{a.out}/scan-summary.md", "w") as f:
         f.write(f"# Scan summary\n\n")
         f.write(f"- **Run:** {run_id} · {now}\n- **Source:** ISSN {a.issn}, published since {a.since}\n")
         f.write(f"- **Returned:** {len(papers)} · **New this run:** {len(new)} · **Already seen:** {skipped}\n")
+        f.write(f"- **Eligible:** {len(eligible)} · **Filtered by standing exclusions:** {len(filtered)}\n")
         f.write(f"- **Ledger total:** {db.execute('SELECT COUNT(*) FROM papers').fetchone()[0]}\n\n")
-        f.write("## By cluster\n\n| Cluster | Papers |\n|---|---:|\n")
+        f.write("## By cluster (eligible only)\n\n| Cluster | Papers |\n|---|---:|\n")
         for k, v in sorted(by_cluster.items(), key=lambda x: -x[1]): f.write(f"| {k} | {v} |\n")
+        fc = {}
+        for p in filtered:
+            for n in p["excluded_by"]: fc[n] = fc.get(n, 0) + 1
+        f.write("\n## Removed by standing filter\n\n| Exclusion | Papers |\n|---|---:|\n")
+        for k, v in sorted(fc.items(), key=lambda x: -x[1]): f.write(f"| {k} | {v} |\n")
         if new:
             f.write(f"\n## New since last scan ({len(new)})\n\n")
             for p in sorted(new, key=lambda x: -x["cites"]):
                 link = f"https://doi.org/{p['doi']}" if p["doi"] else ""
-                f.write(f"- [{p['title']}]({link}) — {p['year']}, {p['cites']} citations, _{p['cluster']}_\n")
+                tag = f" — **filtered: {', '.join(p['excluded_by'])}**" if p["excluded_by"] else ""
+                f.write(f"- [{p['title']}]({link}) — {p['year']}, {p['cites']} citations, _{p['cluster']}_{tag}\n")
         else:
             f.write("\n## New since last scan\n\nNone. Every paper returned was already in the ledger.\n")
     print(f"  wrote {a.out}/")
