@@ -1,0 +1,30 @@
+[
+ {
+  "id": "W7203840961",
+  "doi": "10.1109/ojcs.2026.3726037",
+  "title": "IPFLang: A Domain-Specific Language for Multi Currency Regulatory Fee Computation with Static Verification",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Valer Bocan",
+   "Valentina E. Balas"
+  ],
+  "n_authors": 2,
+  "institutions": [],
+  "countries": [],
+  "topics": [
+   "Blockchain Technology Applications and Security",
+   "Formal Methods in Verification",
+   "Global Financial Crisis and Policies"
+  ],
+  "concepts": [
+   "Computer science",
+   "Computation"
+  ],
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": [
+   "governance"
+  ]
+ }
+]
