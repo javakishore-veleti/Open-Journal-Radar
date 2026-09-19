@@ -1,0 +1,38 @@
+[
+ {
+  "id": "W7166535371",
+  "doi": "10.1109/ojcs.2026.3735032",
+  "title": "Evaluating the Steerability of Large Language Models Toward Two-Dimensional Political Stances via In-Context Learning",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Yuji Ueda",
+   "Kentaro Ueda",
+   "Fujio Toriumi",
+   "Yutaka Arakawa",
+   "Keiichi Yasumoto",
+   "Hirohiko Suwa"
+  ],
+  "n_authors": 6,
+  "institutions": [
+   "Kyushu University",
+   "Nara Institute of Science and Technology",
+   "The University of Tokyo"
+  ],
+  "countries": [
+   "JP"
+  ],
+  "topics": [
+   "Computational and Text Analysis Methods",
+   "Sentiment Analysis and Opinion Mining",
+   "Misinformation and Its Impacts"
+  ],
+  "concepts": [
+   "Computer science",
+   "Politics"
+  ],
+  "cluster": "Agentic AI & LLM Systems",
+  "excluded_by": []
+ }
+]
