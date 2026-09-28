@@ -1,0 +1,168 @@
+[
+ {
+  "id": "W7214101323",
+  "doi": "10.1109/ojcs.2026.3737104",
+  "title": "Backbone-Modular Neuro-Symbolic Post-Correction for OCT Denoising via Explicit Predicate Maps and Stable Fuzzy Allocation",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Wuttipong Kumwilaisak",
+   "Tanawat Matangkasombut"
+  ],
+  "n_authors": 2,
+  "institutions": [
+   "King Mongkut's University of Technology Thonburi"
+  ],
+  "countries": [
+   "TH"
+  ],
+  "topics": [
+   "Optical Coherence Tomography Applications",
+   "Neural Networks and Reservoir Computing",
+   "Blind Source Separation Techniques"
+  ],
+  "concepts": [
+   "Computer science",
+   "Artificial intelligence",
+   "Algorithm",
+   "Fuzzy logic",
+   "Noise reduction"
+  ],
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214112724",
+  "doi": "10.1109/ojcs.2026.3736979",
+  "title": "Error-Based Metrics for Fingerprint Vector Similarity Assessment in Clustering-Based Fingerprinting Systems",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Abdulmalik Shehu Yaro",
+   "Filip Mal\u00fd",
+   "Pavel Pra\u017e\u00e1k"
+  ],
+  "n_authors": 3,
+  "institutions": [
+   "University of Hradec Kr\u00e1lov\u00e9"
+  ],
+  "countries": [
+   "CZ"
+  ],
+  "topics": [
+   "Biometric Identification and Security",
+   "Face and Expression Recognition",
+   "Forensic Fingerprint Detection Methods"
+  ],
+  "concepts": [
+   "Artificial intelligence",
+   "Pattern recognition (psychology)",
+   "Computer science",
+   "Similarity (geometry)"
+  ],
+  "cluster": "Security & Threat Detection",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214178960",
+  "doi": "10.1109/ojcs.2026.3737277",
+  "title": "Explainable Video Anomaly Detection Using Video Masked Autoencoders and Convolutional LSTM",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Anjali S",
+   "Don S"
+  ],
+  "n_authors": 2,
+  "institutions": [
+   "Amrita Vishwa Vidyapeetham"
+  ],
+  "countries": [
+   "IN"
+  ],
+  "topics": [
+   "Anomaly Detection Techniques and Applications",
+   "Human Pose and Action Recognition",
+   "Explainable Artificial Intelligence (XAI)"
+  ],
+  "concepts": [
+   "Artificial intelligence",
+   "Computer science",
+   "Computer vision",
+   "Anomaly detection",
+   "Convolutional neural network",
+   "Pattern recognition (psychology)"
+  ],
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214218501",
+  "doi": "10.1109/ojcs.2026.3734832",
+  "title": "Training-Free Cross-Domain Learning Transfer in Reasoning Models",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Sonal Pandey",
+   "Vijay K. Madisetti"
+  ],
+  "n_authors": 2,
+  "institutions": [
+   "Bennett University",
+   "Georgia Institute of Technology"
+  ],
+  "countries": [
+   "IN",
+   "US"
+  ],
+  "topics": [
+   "Domain Adaptation and Few-Shot Learning",
+   "Intelligent Tutoring Systems and Adaptive Learning",
+   "Machine Learning and Algorithms"
+  ],
+  "concepts": [
+   "Computer science",
+   "Artificial intelligence"
+  ],
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214226656",
+  "doi": "10.1109/ojcs.2026.3733744",
+  "title": "Colony: Robust Personalized ML with Contribution-Driven Connectivity and Resource Allocation in P2P Networks",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Karim Boubouh",
+   "Rabeb Mizouni",
+   "Jamal Bentahar",
+   "Hadi Otrok",
+   "Azzam Mourad",
+   "Sami Muhaidat"
+  ],
+  "n_authors": 6,
+  "institutions": [
+   "Khalifa University of Science and Technology"
+  ],
+  "countries": [
+   "AE"
+  ],
+  "topics": [
+   "Peer-to-Peer Network Technologies",
+   "Reinforcement Learning in Robotics",
+   "Software-Defined Networks and 5G"
+  ],
+  "concepts": [
+   "Computer science",
+   "Resource allocation"
+  ],
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
+ }
+]
