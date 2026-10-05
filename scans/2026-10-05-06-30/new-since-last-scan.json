@@ -1,0 +1,215 @@
+[
+ {
+  "id": "W4398796160",
+  "doi": "10.1109/ojcs.2026.3739651",
+  "title": "A Memory-Efficient Distributed Algorithm for Approximate Nearest Neighbour Search with Arbitrary Distances",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 1,
+  "authors": [
+   "Elena Garc\u00eda-Morato",
+   "Mar\u00eda Jes\u00fas Algar",
+   "C\u00e9sar \u00c1lfaro",
+   "Felipe Ortega",
+   "Javier G\u00f3mez",
+   "Javier M. Moguerza"
+  ],
+  "n_authors": 6,
+  "institutions": [
+   "Universidad Rey Juan Carlos"
+  ],
+  "countries": [
+   "ES"
+  ],
+  "topics": [
+   "Data Management and Algorithms",
+   "Time Series Analysis and Forecasting",
+   "Data Mining Algorithms and Applications"
+  ],
+  "concepts": [
+   "Similarity (geometry)",
+   "Nearest neighbor search",
+   "Medoid",
+   "Computer science",
+   "k-medoids",
+   "Combinatorics"
+  ],
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
+ },
+ {
+  "id": "W4417086964",
+  "doi": "10.1109/ojcs.2026.3739209",
+  "title": "Hardware-Algorithm Co-Optimization of Early-Exit Neural Networks for Multi-Core Edge Accelerators",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Alaa Zniber",
+   "Arne Symons",
+   "Ouassim Karrakchou",
+   "Marian Verhelst",
+   "Mounir Ghogho"
+  ],
+  "n_authors": 5,
+  "institutions": [
+   "International University of Rabat",
+   "KU Leuven",
+   "Universit\u00e9 Mohammed VI Polytechnique"
+  ],
+  "countries": [
+   "BE",
+   "MA"
+  ],
+  "topics": [
+   "Advanced Neural Network Applications",
+   "Big Data and Digital Economy",
+   "Advanced Memory and Neural Computing"
+  ],
+  "concepts": [
+   "Computer science",
+   "Software deployment",
+   "Cloud computing",
+   "Edge device",
+   "Enhanced Data Rates for GSM Evolution",
+   "Artificial neural network"
+  ],
+  "cluster": "Networks, Cloud & Edge",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214639183",
+  "doi": "10.1109/ojcs.2026.3738262",
+  "title": "Noise-Adaptive Quantum Attention Network (NAQAN): A Hybrid Quantum-Classical Framework for Medical Image Denoising",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Shahjalal Khan",
+   "Tawfiqul Hasan",
+   "Sultanul Arifeen Hamim",
+   "M. F. Mridha",
+   "Nobuyoshi Asai",
+   "Jungpil Shin"
+  ],
+  "n_authors": 6,
+  "institutions": [
+   "Comilla University"
+  ],
+  "countries": [
+   "BD"
+  ],
+  "topics": [
+   "Quantum Computing Algorithms and Architecture",
+   "Quantum Information and Cryptography",
+   "Quantum Mechanics and Applications"
+  ],
+  "concepts": [
+   "Computer science",
+   "Artificial intelligence",
+   "Computer vision",
+   "Noise reduction",
+   "Image (mathematics)"
+  ],
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214725270",
+  "doi": "10.1109/ojcs.2026.3738736",
+  "title": "Protocol-Aware, On-Device Per-Image ASD Classification on Saliency4ASD via Multi-Stream Distillation",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Massimo Orazio Spata",
+   "Mirko Casu",
+   "Francesco Rundo",
+   "Sebastiano Battiato"
+  ],
+  "n_authors": 4,
+  "institutions": [
+   "University of Catania"
+  ],
+  "countries": [
+   "IT"
+  ],
+  "topics": [
+   "Visual Attention and Saliency Detection",
+   "Advanced Neural Network Applications",
+   "Image and Video Quality Assessment"
+  ],
+  "concepts": [
+   "Artificial intelligence",
+   "Computer science",
+   "Pattern recognition (psychology)"
+  ],
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214804516",
+  "doi": "10.1109/ojcs.2026.3738609",
+  "title": "GRAFT-SLR: Graph-aware Region Attention and Flow Token Transformer for Isolated Sign Language Recognition",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "S Renjith",
+   "Aneesh Varghese",
+   "S. S. Poorna"
+  ],
+  "n_authors": 3,
+  "institutions": [
+   "Amrita Vishwa Vidyapeetham"
+  ],
+  "countries": [
+   "IN"
+  ],
+  "topics": [
+   "Hand Gesture Recognition Systems",
+   "Human Pose and Action Recognition",
+   "Face recognition and analysis"
+  ],
+  "concepts": [
+   "Computer science",
+   "Transformer",
+   "Speech recognition",
+   "Security token",
+   "Artificial intelligence"
+  ],
+  "cluster": "Applied ML & Forecasting",
+  "excluded_by": []
+ },
+ {
+  "id": "W7214890675",
+  "doi": "10.1109/ojcs.2026.3738629",
+  "title": "Thermal-Guided Activity Gating for Multi-Modal Remote Physiological Measurement",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Hafsa Iqbal",
+   "Muhammad Ammar Ul Hassan",
+   "Gabriel Costache",
+   "Joseph Lemley"
+  ],
+  "n_authors": 4,
+  "institutions": [
+   "Ollscoil na Gaillimhe \u2013 University of Galway"
+  ],
+  "countries": [
+   "IE"
+  ],
+  "topics": [
+   "Advanced Sensor and Energy Harvesting Materials",
+   "Optical Imaging and Spectroscopy Techniques",
+   "Non-Invasive Vital Sign Monitoring"
+  ],
+  "concepts": [
+   "Gating"
+  ],
+  "cluster": "Multimodal & Vision",
+  "excluded_by": []
+ }
+]
