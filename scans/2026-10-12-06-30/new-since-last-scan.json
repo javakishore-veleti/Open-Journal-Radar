@@ -1,0 +1,74 @@
+[
+ {
+  "id": "W7220845425",
+  "doi": "10.1109/ojcs.2026.3740633",
+  "title": "DGSA-Net: A Domain-Generalized Structural Attention Network for Single-Source Cross-Dataset Medical Image Segmentation",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Dhiraj Kumar Raut",
+   "Pandu Sowkuntla"
+  ],
+  "n_authors": 2,
+  "institutions": [
+   "SRM University, Andhra Pradesh"
+  ],
+  "countries": [
+   "IN"
+  ],
+  "topics": [
+   "Medical Image Segmentation Techniques",
+   "Domain Adaptation and Few-Shot Learning",
+   "Advanced Neural Network Applications"
+  ],
+  "concepts": [
+   "Artificial intelligence",
+   "Computer science",
+   "Computer vision",
+   "Segmentation",
+   "Image segmentation",
+   "Image (mathematics)"
+  ],
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
+ },
+ {
+  "id": "W7221051051",
+  "doi": "10.1109/ojcs.2026.3741690",
+  "title": "Systematization of Knowledge on Air-Gap Attacks and Defense Metrics: A Cyber Kill Chain Perspective",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Bonn Park",
+   "JiEun Lee",
+   "Jiho Lee",
+   "Tarik Taleb",
+   "JaeSeung Song"
+  ],
+  "n_authors": 5,
+  "institutions": [
+   "Ruhr University Bochum"
+  ],
+  "countries": [
+   "DE"
+  ],
+  "topics": [
+   "Information and Cyber Security",
+   "Smart Grid Security and Resilience",
+   "Network Security and Intrusion Detection"
+  ],
+  "concepts": [
+   "Perspective (graphical)",
+   "Computer security",
+   "Business",
+   "Chain (unit)",
+   "Internet privacy"
+  ],
+  "cluster": "Security & Threat Detection",
+  "excluded_by": [
+   "security"
+  ]
+ }
+]

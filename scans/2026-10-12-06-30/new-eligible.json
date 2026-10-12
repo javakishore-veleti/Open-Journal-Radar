@@ -1,0 +1,36 @@
+[
+ {
+  "id": "W7220845425",
+  "doi": "10.1109/ojcs.2026.3740633",
+  "title": "DGSA-Net: A Domain-Generalized Structural Attention Network for Single-Source Cross-Dataset Medical Image Segmentation",
+  "year": 2026,
+  "date": "2026-01-01",
+  "cites": 0,
+  "authors": [
+   "Dhiraj Kumar Raut",
+   "Pandu Sowkuntla"
+  ],
+  "n_authors": 2,
+  "institutions": [
+   "SRM University, Andhra Pradesh"
+  ],
+  "countries": [
+   "IN"
+  ],
+  "topics": [
+   "Medical Image Segmentation Techniques",
+   "Domain Adaptation and Few-Shot Learning",
+   "Advanced Neural Network Applications"
+  ],
+  "concepts": [
+   "Artificial intelligence",
+   "Computer science",
+   "Computer vision",
+   "Segmentation",
+   "Image segmentation",
+   "Image (mathematics)"
+  ],
+  "cluster": "Health & Biomedical AI",
+  "excluded_by": []
+ }
+]
