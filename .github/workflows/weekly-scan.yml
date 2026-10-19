@@ -10,17 +10,24 @@ permissions:
 
 jobs:
   scan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest began migrating to 26 on 2026-10-19
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+
+      - name: Check for API key
+        run: |
+          if [ -z "${{ secrets.OPENALEX_API_KEY }}" ]; then
+            echo "::warning::OPENALEX_API_KEY secret is not set. OpenAlex shares one small daily budget per IP across all unauthenticated callers, and CI runners routinely exhaust it. Get a free key at https://openalex.org/settings/api and add it as a repository secret."
+          fi
 
       - name: Run scan
         env:
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO || 'openalex@users.noreply.github.com' }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           STAMP=$(date -u +%Y-%m-%d-%H-%M)
           echo "STAMP=$STAMP" >> "$GITHUB_ENV"

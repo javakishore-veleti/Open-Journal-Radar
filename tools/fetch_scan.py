@@ -6,6 +6,9 @@ Fetch → cluster → dedup → emit. One reproducible pass over a journal's rec
 
 Deliberately stdlib-only (urllib, sqlite3, json, re) so CI needs no dependency install.
 
+OpenAlex requires an API key for any reliable use: without one, callers share a single
+small daily budget per IP, which CI runners exhaust routinely. Set OPENALEX_API_KEY.
+
 IMPORTANT — rights: this fetches BIBLIOGRAPHIC METADATA ONLY. OpenAlex returns an
 inverted abstract index; we never reconstruct or persist it. Titles, authors, DOIs and
 citation counts are facts about the literature and are stored; article text is not.
@@ -66,16 +69,34 @@ def cluster_of(title, topics, concepts):
     return best
 
 
-def fetch(issn, since, mailto):
+def fetch(issn, since, mailto, api_key=None):
     """Page through OpenAlex. Metadata only — the abstract index is discarded on read."""
     out, cursor = [], "*"
     while cursor:
-        q = urllib.parse.urlencode({
+        params = {
             "filter": f"primary_location.source.issn:{issn},from_publication_date:{since}",
-            "per-page": "200", "cursor": cursor, "mailto": mailto})
+            "per-page": "200", "cursor": cursor, "mailto": mailto}
+        if api_key:
+            params["api_key"] = api_key
+        q = urllib.parse.urlencode(params)
         req = urllib.request.Request(f"{OPENALEX}?{q}", headers={"User-Agent": f"open-journal-radar ({mailto})"})
-        with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as r:
-            d = json.load(r)
+        try:
+            with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as r:
+                d = json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 429) and not api_key:
+                raise SystemExit(
+                    f"\nOpenAlex returned HTTP {e.code}.\n\n"
+                    "Without an API key, requests share a single free daily budget (~$0.10)\n"
+                    "across every caller on the same IP. CI runners share IPs, so that budget\n"
+                    "is routinely spent before this job runs. The `mailto` parameter does not\n"
+                    "raise the limit.\n\n"
+                    "Fix: get a free key (its own daily budget) at\n"
+                    "  https://openalex.org/settings/api\n"
+                    "then expose it as the OPENALEX_API_KEY environment variable, or pass\n"
+                    "--api-key. In CI, store it as the repository secret OPENALEX_API_KEY.\n"
+                ) from None
+            raise
         for w in d.get("results", []):
             title = (w.get("title") or "").strip()
             if not title or SKIP_TITLE.search(title): continue
@@ -110,14 +131,18 @@ def main():
     ap.add_argument("--db", default="data/scan_ledger.db")
     ap.add_argument("--out", required=True, help="snapshot directory, e.g. scans/2026-08-19-21-50")
     ap.add_argument("--mailto", default=os.environ.get("OPENALEX_MAILTO", "research@example.com"))
+    ap.add_argument("--api-key", default=os.environ.get("OPENALEX_API_KEY") or None,
+                    help="OpenAlex API key. Without one, requests share a per-IP daily budget "
+                         "that CI runners routinely exhaust. Prefer the OPENALEX_API_KEY env var.")
     a = ap.parse_args()
 
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from scan_db import connect, ingest
     from topic_filter import partition, EXCLUSIONS
 
-    print(f"fetching {a.issn} since {a.since} …")
-    papers = fetch(a.issn, a.since, a.mailto)
+    print(f"fetching {a.issn} since {a.since} "
+          f"({'with' if a.api_key else 'WITHOUT'} api key) …")
+    papers = fetch(a.issn, a.since, a.mailto, a.api_key)
     print(f"  {len(papers)} papers returned")
     eligible, filtered = partition(papers)      # standing exclusions, tagged in place
     print(f"  {len(eligible)} eligible, {len(filtered)} filtered "

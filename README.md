@@ -42,6 +42,28 @@ cut visible in its own name.
 
 Edit `EXCLUSIONS` to change it; each entry is a case-insensitive regex.
 
+## OpenAlex API key (required)
+
+OpenAlex now meters unauthenticated use: without a key, every caller sharing an IP draws
+on **one free daily budget of about $0.10**. CI runners share IPs broadly, so that budget
+is typically spent before a scheduled job runs, and the API returns `401`. The `mailto`
+parameter does **not** raise the limit.
+
+Get a free key (its own daily budget) at <https://openalex.org/settings/api>, then:
+
+```bash
+export OPENALEX_API_KEY=...      # local runs
+```
+
+For CI, add it as the repository secret `OPENALEX_API_KEY`:
+
+```bash
+gh secret set OPENALEX_API_KEY --repo javakishore-veleti/Open-Journal-Radar
+```
+
+The workflow emits a warning annotation when the secret is missing, and the scanner exits
+with an explanation rather than a stack trace.
+
 ## Running a scan
 
 Standard library only. No dependencies to install.
